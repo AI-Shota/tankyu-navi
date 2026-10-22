@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 344" role="img" aria-label="探究助手のナビィ">
+<defs>
+ <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#eaf5ec"/></linearGradient>
+ <linearGradient id="hat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#638a86"/><stop offset="1" stop-color="#375b70"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-40%" width="160%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<style>
+@keyframes blink{0%,44%,46%,100%{transform:scaleY(1)}45%{transform:scaleY(.1)}}
+@keyframes nod{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.75)}50%{opacity:1;transform:scale(1.12)}}
+.ey{animation:blink 5.4s infinite;transform-origin:center;transform-box:fill-box}.hatcap{animation:nod 4s ease-in-out infinite;transform-origin:182px 112px}.spark{animation:twinkle 2.6s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<ellipse cx="176" cy="317" rx="116" ry="16" fill="#88a5a0" opacity=".18" filter="url(#shadow)"/>
+<!-- small floating stars -->
+<path class="spark" d="M59 119l5-13 5 13 13 5-13 5-5 13-5-13-13-5Z" fill="#efc15f"/>
+<path class="spark" d="M283 111l4-11 4 11 11 4-11 4-4 11-4-11-11-4Z" fill="#89bea6" style="animation-delay:-1.5s"/>
+<!-- feet -->
+<ellipse cx="123" cy="298" rx="35" ry="19" fill="#80a79a" stroke="#456473" stroke-width="5"/>
+<ellipse cx="225" cy="298" rx="35" ry="19" fill="#80a79a" stroke="#456473" stroke-width="5"/>
+<!-- round cream character -->
+<path d="M88 148C69 164 61 199 67 235c5 42 37 73 108 78 73 4 120-33 126-81 7-54-12-98-51-119-31-17-119-16-162 35Z" fill="url(#body)" stroke="#476878" stroke-width="6" stroke-linejoin="round"/>
+<!-- leaf sprout -->
+<path d="M184 106c-4-24 0-39 8-48" fill="none" stroke="#4d8a65" stroke-width="6" stroke-linecap="round"/>
+<path d="M190 79C162 73 157 51 160 37c24 0 39 19 30 42Z" fill="#a9d49d" stroke="#4d8a65" stroke-width="4"/>
+<path d="M192 73c9-26 30-29 45-22-5 21-22 35-45 22Z" fill="#7ebc96" stroke="#4d8a65" stroke-width="4"/>
+<!-- cap -->
+<g class="hatcap"><path d="M93 109l80-42 99 37-90 46Z" fill="url(#hat)" stroke="#456173" stroke-width="6" stroke-linejoin="round"/>
+<path d="M123 125v31c33 19 76 19 111-2v-31" fill="url(#hat)" stroke="#456173" stroke-width="5" stroke-linejoin="round"/>
+<path d="M260 112v43" fill="none" stroke="#e6b962" stroke-width="5" stroke-linecap="round"/><circle cx="260" cy="156" r="8" fill="#f1c974"/></g>
+<!-- eyes -->
+<g class="ey"><ellipse cx="137" cy="212" rx="10" ry="15" fill="#3d5266"/><ellipse cx="211" cy="212" rx="10" ry="15" fill="#3d5266"/><circle cx="141" cy="206" r="3" fill="white"/><circle cx="215" cy="206" r="3" fill="white"/></g>
+<ellipse cx="107" cy="233" rx="17" ry="10" fill="#efb9b3" opacity=".58"/><ellipse cx="245" cy="232" rx="17" ry="10" fill="#efb9b3" opacity=".58"/>
+<path d="M160 237q16 17 32 0" stroke="#476878" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+<!-- hands holding book -->
+<path d="M85 259c0-18 10-26 22-17l28 29-19 20-24-17" fill="#fff7e7" stroke="#476878" stroke-width="5" stroke-linejoin="round"/>
+<path d="M257 258c3-18-7-26-20-18l-27 30 18 21 28-18" fill="#fff7e7" stroke="#476878" stroke-width="5" stroke-linejoin="round"/>
+<path d="M135 248q20-7 39 7 20-14 41-7v46q-21-10-41 4-20-14-39-4Z" fill="#d5e8e1" stroke="#527c79" stroke-width="5" stroke-linejoin="round"/>
+<path d="M174 255v42" stroke="#527c79" stroke-width="3"/><path d="M146 264l18 6m-18 7 18 7m40-21-19 7m19 7-19 7" stroke="#85aa9a" stroke-width="3" stroke-linecap="round"/>
+<!-- magnifying glass -->
+<g transform="translate(261 194) rotate(-20)"><circle cx="0" cy="0" r="30" fill="#dff3f0" fill-opacity=".72" stroke="#567987" stroke-width="7"/><path d="M-20 22l-27 38" stroke="#567987" stroke-width="11" stroke-linecap="round"/><circle cx="-9" cy="-9" r="9" fill="white" opacity=".7"/></g>
+</svg>

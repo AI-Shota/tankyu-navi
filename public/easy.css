@@ -1,0 +1,94 @@
+/* v9 Calm notebook · five direct sections · consistent multi-script typography */
+:root{--paper:#fffefa;--ink:#263d4f;--sub:#667987;--line:#e3e7e3;--bg:#f8f7f3}
+html{scroll-behavior:smooth}
+body{background:#f8f7f3;color:#263d4f}
+.intro{padding-bottom:7px;margin-bottom:15px;min-height:unset}
+.intro h1{max-width:100%;font-weight:400!important;text-wrap:balance}
+.intro p{max-width:620px}
+.intro>div:first-child:before{display:none}
+.brand::after,.sidebar::before{display:none!important}
+.nav{gap:6px}
+.navbtn{min-height:52px;border-radius:12px!important;padding:11px 12px;font-weight:700}
+.navbtn:nth-child(n){margin:0;border-top:0;padding-top:11px}
+.sidebar{border-right:0}
+.sidebar .daily-sticky{margin-top:27px}
+.card{border-radius:17px;padding:22px}
+.card+.card{margin-top:12px}
+.sectionhead.hand{display:flex;align-items:center;gap:9px}
+.sectionhead .tiny{font-family:inherit;font-size:12px!important}
+.quickgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.quick{border-radius:14px;min-height:103px}
+.quick:focus-visible,.navbtn:focus-visible,.bottomnav button:focus-visible,.work-fold>summary:focus-visible{outline:3px solid #d2ab74;outline-offset:3px}
+.topic-card .next-title{line-height:1.5;overflow-wrap:anywhere}
+.task-paper .next-title{font-size:clamp(20px,2.3vw,26px);line-height:1.5}
+/* Fold secondary work under explicit disclosure affordances */
+.work-fold{border:1px solid #e2e8e2;background:#fffefa;border-radius:16px;margin:16px 0;overflow:hidden}
+.work-fold-head{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:19px 22px;color:#2d5969;font-size:17px;font-weight:800;transition:background .18s}
+.work-fold-head::-webkit-details-marker{display:none}
+.work-fold-head:hover{background:#f3f7f3}
+.work-fold-head .fold-hint{width:29px;height:29px;display:grid;place-items:center;border-radius:100%;background:#edf3ec;color:#4c6f64;font-family:system-ui;font-size:20px;line-height:1;transition:transform .2s}
+.work-fold[open]>.work-fold-head{border-bottom:1px solid #e7eee9;background:#f4f8f3}
+.work-fold[open]>.work-fold-head .fold-hint{transform:rotate(180deg)}
+.work-fold>.card{box-shadow:none;margin:0!important;border:none;border-radius:0;background:transparent}
+.work-fold>.steps{padding:0 15px 16px}
+.work-fold>.steps .step{box-shadow:none}
+.work-fold .desc{margin-bottom:13px}
+#check .work-fold{margin-top:18px}
+#check .work-fold .field{margin-bottom:13px}
+#check .work-fold .row{flex-wrap:wrap}
+#project .work-fold{scroll-margin-top:88px}
+#check .work-fold{scroll-margin-top:88px}
+#backgroundFold .field{margin-top:2px}
+#noteExtras{margin:12px 0 16px;border-radius:12px}
+#noteExtras .work-fold-head{padding:12px 15px;font-size:13px;font-weight:700}
+#noteExtras .field{padding:10px 15px 0;margin:0}
+#noteExtras .field:last-child{padding-bottom:15px}
+/* restrained stationery details, tiny passive motion, no new user chores */
+.topic-card{position:relative}
+.topic-card:after{content:'';position:absolute;right:17px;top:-3px;width:47px;height:10px;border-radius:2px;background:#d7e8d6;transform:rotate(3deg);opacity:.75;pointer-events:none}
+.nexticon{transition:transform .3s cubic-bezier(.2,1,.3,1)}
+.task-paper:hover .nexticon{transform:rotate(-9deg) scale(1.05)}
+.rail-card.idea-card .idea-prompt{animation:note-appear .4s both}
+@keyframes note-appear{from{opacity:.35;transform:translateY(2px)}to{opacity:1;transform:translateY(0)}}
+/* do not shrink the Korean/Chinese glyphs or synthesize heavy weights in playful display fonts */
+html[data-locale=ja] .intro h1,html[data-locale=ja] .sectionhead.hand{font-family:'Mochiy Pop One','M PLUS Rounded 1c',sans-serif!important;font-weight:400!important;letter-spacing:.005em!important}
+html[data-locale=en] .intro h1,html[data-locale=en] .sectionhead.hand{font-family:'Fredoka','Nunito',sans-serif!important;font-weight:600!important;letter-spacing:0!important}
+html[data-locale=ko] .intro h1,html[data-locale=ko] .sectionhead.hand{font-family:'Dongle','NanumSquareRound','Nanum Gothic',sans-serif!important;font-weight:700!important;letter-spacing:0!important}
+html[data-locale=zh-CN] .intro h1,html[data-locale=zh-CN] .sectionhead.hand{font-family:'ZCOOL KuaiLe','Noto Sans SC',sans-serif!important;font-weight:400!important;letter-spacing:0!important}
+html[data-locale=zh-TW] .intro h1,html[data-locale=zh-TW] .sectionhead.hand{font-family:'Chiron GoRound TC','Noto Sans TC',sans-serif!important;font-weight:700!important;letter-spacing:0!important}
+html[data-locale=zh-TW] body{font-family:'Chiron GoRound TC','Noto Sans TC','PingFang TC',sans-serif!important;font-weight:400}
+html[data-locale=zh-CN] body{font-family:'Noto Sans SC','Microsoft YaHei',sans-serif!important}
+html[data-locale=ja] .intro h1{font-size:clamp(27px,3vw,33px);line-height:1.65}
+html[data-locale=ja] .sectionhead.hand{font-size:18px!important;line-height:1.65!important}
+html[data-locale=en] .intro h1{font-size:clamp(29px,3.2vw,37px);line-height:1.35}
+html[data-locale=en] .sectionhead.hand{font-size:23px}
+html[data-locale=ko] .intro h1{font-size:clamp(38px,4.1vw,48px);line-height:1.23}
+html[data-locale=ko] .sectionhead.hand{font-size:29px!important;line-height:1.25!important}
+html[data-locale=zh-CN] .intro h1{font-size:clamp(29px,3vw,34px);line-height:1.6}
+html[data-locale=zh-TW] .intro h1{font-size:clamp(29px,3vw,34px);line-height:1.6}
+html[data-locale=zh-CN] .sectionhead.hand,html[data-locale=zh-TW] .sectionhead.hand{font-size:21px!important;line-height:1.6}
+html[data-locale=ko] .sectionhead.hand,html[data-locale=zh-CN] .sectionhead.hand,html[data-locale=zh-TW] .sectionhead.hand{word-break:keep-all;overflow-wrap:anywhere}
+/* field readability and focus */
+.field input,.field textarea,.inline-add input,#otherPrompt{font-size:16px!important;line-height:1.65!important;border-color:#d9e1e4!important}
+.field input:focus,.field textarea:focus,.inline-add input:focus{outline:2px solid #7caeb0!important;outline-offset:1px}
+/* mobile: fully visible 5 tabs, no More sheet */
+@media(max-width:760px){
+ .wrap{padding-left:15px;padding-right:15px}
+ .intro{padding-bottom:5px}
+ .bottomnav{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:0;padding-bottom:env(safe-area-inset-bottom)}
+ .bottomnav button{width:100%;padding:8px 0!important;min-width:0;font-size:10px!important;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px}
+ .bottomnav button b{font-size:21px;line-height:1.15}
+ .bottomnav button span{display:block;line-height:1.35;font-size:10px;white-space:nowrap;letter-spacing:-.02em}
+ .work-fold-head{font-size:15px;padding:16px 15px}
+ .work-fold>.steps{padding:0 9px 12px}
+ .work-fold>.card{padding:18px 14px}
+ .quickgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ html[data-locale=ja] .intro h1{font-size:27px!important;line-height:1.6!important}
+ html[data-locale=ko] .intro h1{font-size:39px!important;line-height:1.2!important}
+ html[data-locale=ko] .sectionhead.hand{font-size:27px!important}
+ html[data-locale=zh-CN] .intro h1,html[data-locale=zh-TW] .intro h1{font-size:28px!important}
+ html[data-locale=ko] .bottomnav button span,html[data-locale=zh-CN] .bottomnav button span,html[data-locale=zh-TW] .bottomnav button span{font-size:10px;white-space:normal}
+ .card{padding:17px}
+}
+@media(max-width:350px){.bottomnav button span{font-size:9px!important}.work-fold-head{font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rail-card.idea-card .idea-prompt{animation:none}}

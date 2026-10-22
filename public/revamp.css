@@ -1,0 +1,80 @@
+/* V8 / Notebook refresh — 5 locales, motion conscious, readable controls */
+:root{--ink:#28394a;--sub:#647688;--line:#e7e9e3;--bg:#f8f7f2;--paper:#fffefa;--green:#326f68;--mint:#e7f2ec;--shadow:0 10px 28px rgba(55,65,72,.045)}
+html{font-size:16px;text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{color:var(--ink);background-color:var(--bg);font-weight:500;line-height:1.72;-webkit-font-smoothing:antialiased}
+/* mobile fallback stack avoids visually tiny or inconsistent default glyphs */
+html[data-locale=ja] body{font-family:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN','Yu Gothic',sans-serif}
+html[data-locale=en] body{font-family:'Nunito','Trebuchet MS',sans-serif}
+html[data-locale=ko] body{font-family:'NanumSquareRound','Nanum Gothic','Apple SD Gothic Neo','Malgun Gothic',sans-serif;letter-spacing:0;font-size:16px;line-height:1.72;word-break:keep-all}
+html[data-locale=zh-CN] body{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;font-size:16px;line-height:1.8;letter-spacing:0}
+html[data-locale=zh-TW] body{font-family:'Huninn','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-size:16px;line-height:1.8;letter-spacing:0}
+/* Korean body round face via a third-party stylesheet if available; fallback from Google Fonts remains */
+@font-face{font-family:'NanumSquareRound';src:url('https://cdn.jsdelivr.net/gh/innks/NanumSquareRound@master/NanumSquareRoundR.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'NanumSquareRound';src:url('https://cdn.jsdelivr.net/gh/innks/NanumSquareRound@master/NanumSquareRoundB.woff2') format('woff2');font-style:normal;font-weight:700 900;font-display:swap}
+/* Playful geometric letterforms limited to a heading, never tiny UI */
+html[data-locale=ja] .intro h1,html[data-locale=ja] .sectionhead.hand{font-family:'RocknRoll One','Yusei Magic','M PLUS Rounded 1c',sans-serif!important;font-weight:400!important;letter-spacing:.008em!important}
+html[data-locale=en] .intro h1,html[data-locale=en] .sectionhead.hand{font-family:'Patrick Hand','Nunito',sans-serif!important;letter-spacing:.015em!important}
+html[data-locale=ko] .intro h1,html[data-locale=ko] .sectionhead.hand{font-family:'Jua','NanumSquareRound','Nanum Gothic',sans-serif!important;font-weight:400!important;letter-spacing:.004em!important}
+html[data-locale=zh-CN] .intro h1,html[data-locale=zh-CN] .sectionhead.hand{font-family:'ZCOOL KuaiLe','Noto Sans SC',sans-serif!important;font-weight:400!important;letter-spacing:0!important}
+html[data-locale=zh-TW] .intro h1,html[data-locale=zh-TW] .sectionhead.hand{font-family:'LXGW WenKai TC','Huninn','Noto Sans TC',sans-serif!important;font-weight:700!important;letter-spacing:0!important}
+html[data-locale=ko] .brand,html[data-locale=ko] .title,html[data-locale=ko] .navbtn{font-family:'NanumSquareRound','Nanum Gothic','Malgun Gothic',sans-serif!important}
+html[data-locale=zh-TW] .brand,html[data-locale=zh-TW] .title{font-family:'Huninn','Noto Sans TC',sans-serif!important}
+html[data-locale=zh-CN] .brand,html[data-locale=zh-CN] .title{font-family:'Noto Sans SC',sans-serif!important}
+html[data-locale=ko] .daily-sticky p,html[data-locale=ko] .idea-prompt{font-family:'Jua','NanumSquareRound','Nanum Gothic',sans-serif!important;font-weight:400!important}
+html[data-locale=zh-CN] .daily-sticky p,html[data-locale=zh-CN] .idea-prompt{font-family:'ZCOOL KuaiLe','Noto Sans SC',sans-serif!important;font-weight:400!important}
+html[data-locale=zh-TW] .daily-sticky p,html[data-locale=zh-TW] .idea-prompt{font-family:'LXGW WenKai TC','Huninn',sans-serif!important;font-weight:700!important}
+/* Make small Japanese characters clearly legible; no faux bold or crushed tracking */
+html[data-locale=ja] .intro h1{letter-spacing:0!important;line-height:1.56;font-size:clamp(29px,3.1vw,37px)}
+html[data-locale=ja] .title,html[data-locale=ja] .next-title{letter-spacing:0!important;line-height:1.65}
+html[data-locale=ja] .brand{letter-spacing:0!important;font-weight:700}
+html[data-locale=ko] .intro h1{font-size:clamp(30px,3vw,37px);line-height:1.55}
+html[data-locale=zh-CN] .intro h1,html[data-locale=zh-TW] .intro h1{font-size:clamp(28px,3vw,35px);line-height:1.6}
+html[data-locale=ko] .sectionhead.hand,html[data-locale=zh-CN] .sectionhead.hand,html[data-locale=zh-TW] .sectionhead.hand{font-size:21px;line-height:1.6}
+html[data-locale=ja] .sectionhead.hand{font-size:20px;line-height:1.6}
+html[data-locale=ko] .desc,html[data-locale=zh-CN] .desc,html[data-locale=zh-TW] .desc{font-size:14px;line-height:1.8}
+/* Calm desk instead of dashboard clutter */
+.wrap{max-width:1160px}.layout{grid-template-columns:188px minmax(0,1fr) 228px;column-gap:20px}
+.topbar{background:rgba(255,254,250,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.card{background:#fffefa;box-shadow:0 7px 28px #3b4e5a08;border:1px solid #e7e9e3;border-radius:15px}
+.topic-card{background:#f0f5ef}.task-paper{background:#fff8e8;border-color:#e8dfca}
+.intro-art{opacity:.64}.intro-sticky{box-shadow:2px 3px 0 #e4d8c0}
+.sidebar{padding:4px 2px}.nav{gap:3px}.navbtn{min-height:47px;border-radius:10px;font-weight:700;transition:transform .17s,background .17s}
+.navbtn:nth-child(3){margin-bottom:9px}.navbtn:nth-child(4){border-top:1px solid #e3e5e0;border-radius:0;padding-top:18px}.navbtn:nth-child(5){margin-bottom:9px}
+.navbtn:hover{transform:translateX(3px)}.navbtn.selected{background:#e7f1ec;color:#285e56;box-shadow:inset 3px 0 #468376}
+.quickgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.quick{min-height:105px;padding:13px 11px;align-items:flex-start;flex-direction:column;border-radius:13px;box-shadow:none;transition:transform .22s,box-shadow .22s,border-color .22s}.quick:hover{transform:translateY(-3px);box-shadow:0 10px 18px #425c5d12}.quick .emoji{font-size:21px}.quick small{line-height:1.5;font-size:11px}
+.desk-rail{gap:12px}.rail-card{border-radius:13px;box-shadow:none}.growth-card{padding:12px}.plant-scene{height:76px}.rail-heading{font-size:15px}
+.sidebar-buddy{opacity:.82}.daily-sticky{box-shadow:0 6px 14px #453c2b0d}
+/* Clear primary-action hierarchy */
+.btn.primary,.task-paper .btn.primary.big{background:#345e76;color:#fff}.btn.primary:hover,.task-paper .btn.primary.big:hover{background:#294f65}.btn{border-radius:10px;transition:transform .18s,background .18s,box-shadow .18s}.btn:hover:not(:disabled){transform:translateY(-1px)}.btn.primary:focus-visible{outline:3px solid #f5c875;outline-offset:3px}
+.sectionhead{margin:22px 0 10px}.sectionhead .tiny{font-size:11px}.intro{margin-bottom:18px}.intro>div:first-child:before{opacity:.6;font-size:9px}
+/* Hand-drawn checkboxes: the entire paper strip is the tap target. */
+#checkList{display:grid;gap:10px}.checkline{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);align-items:center;gap:10px;min-height:78px;margin:0;border:1px solid #e4e2d8;border-radius:12px;background:linear-gradient(transparent 97%,#eef0e9 97%),#fffefa;background-size:100% 28px;padding:14px 17px 14px 13px;cursor:pointer;transition:background .22s,border-color .22s,transform .2s}
+.checkline:hover{border-color:#a6bfb3;transform:translateX(2px)}.checkline.is-checked{background:#eef7f0;border-color:#adcfba}.checkline input{position:absolute;opacity:0;width:37px;height:37px;top:50%;left:15px;transform:translateY(-50%);margin:0;cursor:pointer}
+.checkline:focus-within{outline:3px solid #e9ab53;outline-offset:3px}
+.handcheck{display:grid;place-items:center;justify-self:center;width:35px;height:35px;border:2px solid #abb7b5;border-radius:8px;background:white;color:#388775;transform:rotate(-2deg);pointer-events:none;box-shadow:1px 2px 0 #ebe7dc}
+.handcheck svg{width:36px;height:35px;overflow:visible}.handcheck-stroke{stroke-dasharray:48;stroke-dashoffset:48;opacity:0;transition:stroke-dashoffset .3s cubic-bezier(.24,.83,.35,1.08),opacity .12s}
+.checkline.is-checked .handcheck{border-color:#7ba99a;transform:rotate(2deg)}.checkline.is-checked .handcheck-stroke{stroke-dashoffset:0;opacity:1;animation:check-swish .42s cubic-bezier(.24,.83,.35,1.08) both}
+.checkcopy{display:block;min-width:0}.checkline strong{font-size:15px;line-height:1.45;letter-spacing:0}.checkline small{font-size:12px;line-height:1.55;color:#697b83}
+.check-progress{width:max-content;padding:3px 12px;margin:10px 0 14px;border-radius:99px;color:#3a6e60;font-weight:800;background:linear-gradient(90deg,#d6ecde var(--checked-ratio,0%),#f3f5f0 var(--checked-ratio,0%));font-size:13px;transition:background .2s}
+@keyframes check-swish{from{stroke-dashoffset:48;opacity:.3}to{stroke-dashoffset:0;opacity:1}}
+/* Gentle motion only where useful; no constant distractions. */
+.panel.active{animation:page-rise .28s ease both}.topic-card,.task-paper{transition:box-shadow .2s}
+@keyframes page-rise{from{opacity:.5;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.rail-card:focus-within,.card:focus-within{box-shadow:0 4px 18px #335d6a11}
+/* Buttons, fields, and clipboard area always readable on mobile */
+.field input,.field textarea,.inline-add input,#otherPrompt{color:#24384b!important;-webkit-text-fill-color:#24384b!important;font-size:16px!important;background:#fffefa!important}
+::placeholder{color:#758493;opacity:1}
+@media(max-width:1100px){.wrap{max-width:1010px}.layout{grid-template-columns:176px minmax(0,1fr) 205px;gap:14px}.quickgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:920px){.layout{grid-template-columns:174px minmax(0,1fr)}.desk-rail{display:none}.quickgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){html[data-locale=ja] .intro h1{font-size:29px;line-height:1.55}html[data-locale=ko] .intro h1{font-size:29px}html[data-locale=zh-CN] .intro h1,html[data-locale=zh-TW] .intro h1{font-size:27px}.intro h1{display:block!important;overflow-wrap:anywhere}.intro p{font-size:13px}.sidebar{display:none}.layout{display:block}.quickgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.quick{min-height:96px;padding:12px}.card{padding:18px}.topic-card{min-height:150px}.task-paper{padding:21px 15px 19px 39px}.checkline{min-height:79px;grid-template-columns:41px 1fr;padding:12px 10px}.checkline strong{font-size:14px}.checkline small{font-size:12px}.mobile-tip{display:none}.mobile-planner{margin-top:17px}.mobile-mini-quote{display:none}.bottomnav{background:rgba(255,254,250,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.brand{font-size:19px!important}.brand>span[data-tr]{font-weight:800}html[data-locale=ko] .brand,html[data-locale=zh-CN] .brand,html[data-locale=zh-TW] .brand{font-size:17px!important}.locale-picker{min-width:43px}body{line-height:1.7}}
+@media(max-width:350px){.quickgrid{grid-template-columns:1fr}.quick{min-height:70px;flex-direction:row;align-items:center}.intro h1{font-size:25px!important}}
+@media(prefers-reduced-motion:reduce){.panel.active,.checkline.is-checked .handcheck-stroke{animation:none!important}.checkline,.btn,.quick,.navbtn{transition:none!important}.handcheck-stroke{transition:none!important}}
+/* Narrow-screen safeguard: flex/grid children must be allowed to shrink in every script. */
+@media(max-width:760px){
+ .mobile-planner{grid-template-columns:minmax(0,1fr);width:100%;min-width:0}
+ .mobile-tools-card{min-width:0;max-width:100%;overflow:hidden}
+ .mobile-tools-head,.inline-add,.rail-task-list{min-width:0;max-width:100%}
+ .mobile-tools-head>span{min-width:0;overflow-wrap:anywhere}
+ .mobile-tools-card .inline-add input{min-width:0;width:1px;flex:1 1 0}
+ .mobile-tools-card .inline-add button{flex:0 0 36px}
+}

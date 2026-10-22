@@ -1,0 +1,36 @@
+/* Typography system v10: two roles in every language, no crossover.
+   Rounded gothic = work and navigation; handwriting = marginal notes only. */
+html[data-locale="ja"] {--font-ui:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN','Yu Gothic',sans-serif;--font-note:'Yomogi','M PLUS Rounded 1c',sans-serif}
+html[data-locale="en"] {--font-ui:'Nunito','Trebuchet MS',sans-serif;--font-note:'Patrick Hand','Nunito',sans-serif}
+html[data-locale="ko"] {--font-ui:'NanumSquareRound','Nanum Gothic','Apple SD Gothic Neo','Malgun Gothic',sans-serif;--font-note:'Gaegu','NanumSquareRound','Apple SD Gothic Neo',sans-serif}
+html[data-locale="zh-CN"] {--font-ui:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;--font-note:'LXGW WenKai','Noto Sans SC',sans-serif}
+html[data-locale="zh-TW"] {--font-ui:'Chiron GoRound TC','Noto Sans TC','PingFang TC',sans-serif;--font-note:'LXGW WenKai TC','Chiron GoRound TC',sans-serif}
+html[data-locale] body {font-family:var(--font-ui)!important;font-weight:400;line-height:1.7}
+/* Every actionable or important heading is clearly and consistently gothic. */
+html[data-locale] :is(.brand,.intro h1,.title,.sectionhead.hand,.sectionhead,.next-title,.task-paper .next-title,.topic-card .next-title,.rail-heading,.work-fold-head,.mobile-tools-head,.step h3,.checkline strong,.quick,.quick small,.navbtn,.bottomnav button,.btn,.eyebrow,.stepcount,.advice-box h3,.mascot-words .title,.check-progress,.mobile-tools-card,.note h3,.note .muted,.field label,.save,.mini-badge,.go-link,.subtle-details>summary) {font-family:var(--font-ui)!important;letter-spacing:normal!important}
+html[data-locale] :is(input,textarea,select,#otherPrompt,.prompt-text,.doc,.ai-output) {font-family:var(--font-ui)!important}
+html[data-locale] :is(.brand,.intro h1,.title,.sectionhead.hand,.sectionhead,.next-title,.task-paper .next-title,.topic-card .next-title,.rail-heading,.work-fold-head,.mobile-tools-head,.step h3,.checkline strong,.quick,.navbtn,.btn) {font-weight:700!important}
+/* Memo paper, margin doodles and idea card are handwritten across all locales. */
+html[data-locale] :is(.daily-sticky p,.intro-sticky,.idea-prompt,.mobile-tip p,.aside-note,.sticker) {font-family:var(--font-note)!important;font-weight:400!important;letter-spacing:normal!important}
+html[data-locale] :is(.daily-sticky p,.idea-prompt,.intro-sticky) {line-height:1.75!important;font-size:clamp(14px,1.25vw,18px)!important}
+html[data-locale="ko"] :is(.daily-sticky p,.idea-prompt,.intro-sticky){font-size:clamp(17px,1.6vw,21px)!important;line-height:1.5!important}
+html[data-locale="zh-CN"] :is(.daily-sticky p,.idea-prompt,.intro-sticky),html[data-locale="zh-TW"] :is(.daily-sticky p,.idea-prompt,.intro-sticky){font-size:clamp(15px,1.3vw,19px)!important;line-height:1.85!important}
+/* Unify typographic scale regardless of Hangul/CJK glyph metrics. */
+html[data-locale] .intro h1{font-size:clamp(26px,3vw,33px)!important;line-height:1.5!important;font-weight:800!important}
+html[data-locale] .sectionhead.hand{font-size:19px!important;line-height:1.5!important;font-weight:800!important}
+html[data-locale] .title{font-size:22px!important;line-height:1.5!important}
+html[data-locale] :is(.task-paper .next-title,.topic-card .next-title){font-size:clamp(21px,2.25vw,27px)!important;line-height:1.5!important}
+html[data-locale="ko"] :is(.intro h1,.sectionhead.hand){word-break:keep-all}
+html[data-locale="zh-CN"] :is(.intro h1,.sectionhead.hand),html[data-locale="zh-TW"] :is(.intro h1,.sectionhead.hand){word-break:normal}
+html[data-locale] :is(.navbtn,.btn,.quick,.field input,.field textarea,.inline-add input) {font-size:14px;line-height:1.55}
+/* The decorative red margin line was visually distracting. Keep the note holes. */
+.task-paper:before{display:none!important}
+.task-paper{padding-left:28px!important}
+@media(max-width:760px){
+ html[data-locale] .intro h1{font-size:clamp(25px,7vw,30px)!important}
+ html[data-locale] .sectionhead.hand{font-size:18px!important}
+ html[data-locale] :is(.task-paper .next-title,.topic-card .next-title){font-size:21px!important}
+ html[data-locale] :is(.daily-sticky p,.idea-prompt,.intro-sticky){font-size:15px!important}
+ html[data-locale="ko"] :is(.daily-sticky p,.idea-prompt,.intro-sticky){font-size:19px!important}
+ .task-paper{padding-left:18px!important}
+}
