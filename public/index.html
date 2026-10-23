@@ -954,7 +954,13 @@ body.bloom-open{overflow:hidden}
 @media(max-width:600px){.backup-warning{padding:16px}.bw-frame{padding:28px 18px 25px}.bw-symbol{width:74px;height:74px;margin:15px auto 10px}.bw-symbol svg{width:43px;height:43px}.bw-overline{font-size:11px}.bw-actions{flex-direction:column}.bw-btn{width:100%}.bw-status{font-size:10px;padding:5px 8px;min-height:31px}.top-inner{gap:8px}}
 @media(prefers-reduced-motion:reduce){.backup-warning :is(.bw-shell,.bw-stripe,.bw-ring,.bw-symbol svg),.backup-warning::before{animation:none!important}.bw-status{transition:none}}
 </style>
-</head><body><a class="skip" href="#home"><span data-tr="本文へ">本文へ</span></a><header class="topbar"><div class="wrap top-inner"><div class="brand"><span class="brand-mark"><img alt="" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTciIGZpbGw9IiM2YzliODUiLz48cGF0aCBkPSJNMTQgMThxMTgtNyAzMiA0djMwcS0xNi0xMC0zMi00WiIgZmlsbD0iI2ZmZmFmMCIgc3Ryb2tlPSIjMzI1NDViIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMzEgMjB2MjkiIHN0cm9rZT0iIzhjYmQ5YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTM5IDE3cTEtOSAxMi05LTIgMTEtMTIgOVoiIGZpbGw9IiNkNWVhYTkiLz48L3N2Zz4=" width="40"/></span><span data-tr="探究ナビ">探究ナビ</span></div><div class="locale-picker" title="Language / 言語"><label class="visually-hidden" for="languageSelect" id="languageLabel"><span data-tr="言語">言語</span></label><span aria-hidden="true" class="locale-control"><svg aria-hidden="true" class="translate-symbol" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3H2"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><svg aria-hidden="true" class="translate-caret" fill="none" viewbox="0 0 12 12"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path></svg></span><select aria-label="表示言語を選択" data-tr-aria-label="表示言語" id="languageSelect" title="Language / 言語を選択"><option value="ja">日本語</option><option value="en">English</option><option value="ko">한국어</option><option value="zh-CN">简体中文</option><option title="繁體中文（台灣）" value="zh-TW">繁體中文</option></select></div><div aria-live="polite" class="save" id="status">✓ 自動保存</div><button type="button" id="backupBadge" class="bw-status" aria-haspopup="dialog" title="バックアップについて">⚠ バックアップ</button></div></header><main class="wrap"><div class="intro"><div><h1 id="pageTitle">今日の探究</h1><p id="pageSub">続きから、さくっと始めよう。</p></div></div><div class="layout"><aside class="sidebar"><nav aria-label="メインメニュー" class="nav" data-tr-aria-label="メインメニュー" id="sidebarNav"></nav><div aria-label="探究の小さなヒント" class="daily-sticky" data-tr-aria-label="探究の小さなヒント">
+<style id="operator-banner-style">
+#operatorBanner[hidden]{display:none!important}#operatorBanner{box-sizing:border-box;margin:0 auto;max-width:1100px;padding:0 18px}
+.operator-banner-body{margin:12px 0 0;display:flex;align-items:flex-start;gap:10px;padding:13px 17px;border:1px solid #ddceab;background:#fff9ed;border-radius:12px;color:#344354;font-size:13px;line-height:1.6;box-shadow:0 2px 10px #2b466008}
+.operator-banner-body strong{color:#8e5c2b;white-space:nowrap}.operator-banner-body p{margin:0;overflow-wrap:anywhere}
+@media(max-width:600px){.operator-banner-body{padding:12px;font-size:12px;flex-direction:column;gap:3px}}
+</style>
+</head><body><a class="skip" href="#home"><span data-tr="本文へ">本文へ</span></a><header class="topbar"><div class="wrap top-inner"><div class="brand"><span class="brand-mark"><img alt="" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTciIGZpbGw9IiM2YzliODUiLz48cGF0aCBkPSJNMTQgMThxMTgtNyAzMiA0djMwcS0xNi0xMC0zMi00WiIgZmlsbD0iI2ZmZmFmMCIgc3Ryb2tlPSIjMzI1NDViIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMzEgMjB2MjkiIHN0cm9rZT0iIzhjYmQ5YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTM5IDE3cTEtOSAxMi05LTIgMTEtMTIgOVoiIGZpbGw9IiNkNWVhYTkiLz48L3N2Zz4=" width="40"/></span><span data-tr="探究ナビ">探究ナビ</span></div><div class="locale-picker" title="Language / 言語"><label class="visually-hidden" for="languageSelect" id="languageLabel"><span data-tr="言語">言語</span></label><span aria-hidden="true" class="locale-control"><svg aria-hidden="true" class="translate-symbol" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3H2"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><svg aria-hidden="true" class="translate-caret" fill="none" viewbox="0 0 12 12"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path></svg></span><select aria-label="表示言語を選択" data-tr-aria-label="表示言語" id="languageSelect" title="Language / 言語を選択"><option value="ja">日本語</option><option value="en">English</option><option value="ko">한국어</option><option value="zh-CN">简体中文</option><option title="繁體中文（台灣）" value="zh-TW">繁體中文</option></select></div><div aria-live="polite" class="save" id="status">✓ 自動保存</div><button type="button" id="backupBadge" class="bw-status" aria-haspopup="dialog" title="バックアップについて">⚠ バックアップ</button></div></header><div id="operatorBanner" hidden role="status" aria-live="polite"><div class="operator-banner-body"><strong id="operatorBannerLabel">お知らせ</strong><p id="operatorBannerText"></p></div></div><main class="wrap"><div class="intro"><div><h1 id="pageTitle">今日の探究</h1><p id="pageSub">続きから、さくっと始めよう。</p></div></div><div class="layout"><aside class="sidebar"><nav aria-label="メインメニュー" class="nav" data-tr-aria-label="メインメニュー" id="sidebarNav"></nav><div aria-label="探究の小さなヒント" class="daily-sticky" data-tr-aria-label="探究の小さなヒント">
 <div class="daily-sticky-top"><span><span data-tr="今日のふせん">今日のふせん</span></span><span aria-hidden="true" class="mini-paperclip">⌇</span></div>
 <p aria-live="polite" id="dailyTip">ひとつ調べると、ひとつ見えてくる。</p>
 <button aria-label="別のヒントを表示" data-tr-aria-label="別のヒントを表示" id="nextTip" type="button"><span data-tr="↻ もうひとつ">↻ もうひとつ</span></button>
@@ -1227,7 +1233,7 @@ body.bloom-open{overflow:hidden}
       <h2 class="bw-title" id="bwTitle">⚠ 記録が消える可能性があります</h2>
       <p class="bw-copy" id="bwCopy">このブラウザには自動保存されています。ただし、端末の変更やサイトデータの削除などで、記録が失われる場合があります。</p>
       <p class="bw-note" id="bwNote">大切な記録を守るため、必ずバックアップを保存してください</p>
-      <div class="bw-actions"><button type="button" id="bwExport" class="bw-btn main">↓ 今すぐバックアップを保存</button><button type="button" id="bwLater" class="bw-btn secondary">今回は閉じる</button></div>
+      <div class="bw-actions"><button type="button" id="bwExport" class="bw-btn main">↓ バックアップを保存する</button><button type="button" id="bwLater" class="bw-btn secondary">今回は閉じる</button></div>
       <p class="bw-footer" id="bwFooter">ナビィからのお知らせ • この警告は初回だけ大きく表示します</p>
     </div>
     <div class="bw-stripe bottom" aria-hidden="true"></div>
@@ -1467,18 +1473,18 @@ const BACKUP_WARN_SEEN='tankyuNaviBackupNoticeSeen_v2';
 const BACKUP_CHANGED='tankyuNaviLastChanged';
 const BACKUP_EXPORTED='tankyuNaviLastExported';
 const BACKUP_COPY={
-  ja:{title:'⚠ 記録が消える可能性があります',copy:'このブラウザには自動保存されています。ただし、端末の変更やサイトデータの削除などで、記録が失われる場合があります。',note:'大切な記録を守るため、必ずバックアップを保存してください',export:'↓ 今すぐバックアップを保存',later:'今回は閉じる',footer:'ナビィからのお知らせ • この全画面警告は初回の保存時に表示されます',chip:'⚠ バックアップが必要',done:'✓ バックアップ済み',toast:'バックアップのダウンロードを開始しました'},
+  ja:{title:'⚠ 記録が消える可能性があります',copy:'このブラウザには自動保存されています。ただし、端末の変更やサイトデータの削除などで、記録が失われる場合があります。',note:'大切な記録を守るため、必ずバックアップを保存してください',export:'↓ バックアップを保存する',later:'今回は閉じる',footer:'ナビィからのお知らせ • この全画面警告は初回の保存時に表示されます',chip:'⚠ バックアップが必要',done:'✓ バックアップ済み',toast:'バックアップのダウンロードを開始しました'},
   en:{title:'⚠ Your research could be lost',copy:'Your work is auto-saved in this browser. However, it may be lost if you switch devices or clear your browser’s site data.',note:'Please make sure to download a backup of your research',export:'↓ Save a backup now',later:'Close for now',footer:'A note from Navii • This full-screen warning appears when you first save',chip:'⚠ Backup needed',done:'✓ Backed up',toast:'Backup download started'},
   ko:{title:'⚠ 탐구 기록이 사라질 수 있어요',copy:'이 브라우저에 자동 저장되지만, 기기를 바꾸거나 사이트 데이터를 지우면 기록이 사라질 수 있어요.',note:'중요한 기록을 지키려면 꼭 백업 파일을 저장해 주세요',export:'↓ 지금 백업 저장하기',later:'지금은 닫기',footer:'나비의 안내 • 처음 저장할 때 전체 화면으로 알려드려요',chip:'⚠ 백업 필요',done:'✓ 백업 완료',toast:'백업 다운로드를 시작했어요'},
   'zh-CN':{title:'⚠ 探究记录可能丢失',copy:'记录已自动保存在当前浏览器中，但更换设备或清除网站数据时，记录可能丢失。',note:'为保护重要记录，请务必下载备份文件',export:'↓ 立即保存备份',later:'暂时关闭',footer:'纳比提醒 · 首次保存时显示此全屏提示',chip:'⚠ 请备份',done:'✓ 已备份',toast:'已开始下载备份'},
   'zh-TW':{title:'⚠ 探究紀錄可能遺失',copy:'紀錄已自動儲存在目前的瀏覽器中，但更換裝置或清除網站資料時，紀錄可能會遺失。',note:'為了保護重要紀錄，請務必下載備份檔案',export:'↓ 立即儲存備份',later:'暫時關閉',footer:'納比提醒 · 首次儲存時顯示此全螢幕提示',chip:'⚠ 請備份',done:'✓ 已備份',toast:'已開始下載備份'}
 };
 const START_COPY={
-  ja:{overline:'ひとつ進んだところで / 大切なお知らせ',title:'次の作業に進む前に…！',copy:'テーマやノートは、このブラウザに自動保存されます。ただし、端末の変更・サイトデータの削除・閲覧環境の変更などで記録が消える可能性があります。',note:'大切な記録は、作業の区切りごとに必ずバックアップを保存してください',begin:'あとで続ける →',backup:'↓ 今すぐバックアップを保存',footer:'ナビィからのお知らせ • 最初のテーマ・ノート保存後に一度だけ表示します。右上の「バックアップ」からも確認できます'},
-  en:{overline:'ONE STEP DONE / IMPORTANT',title:'Before your next step…!',copy:'Topics and notes are automatically saved in this browser. However, they may disappear if you change devices, clear site data, or use a different browsing environment.',note:'Please download a backup of your important research regularly',begin:'Continue for now →',backup:'↓ Download a backup now',footer:'A note from Navii • Shown once after your first topic or note save. See Backup at the top anytime'},
-  ko:{overline:'첫 단계 완료 / 중요 안내',title:'다음 작업을 시작하기 전에!',copy:'주제와 노트는 이 브라우저에 자동 저장돼요. 하지만 기기를 바꾸거나 사이트 데이터를 삭제하거나 다른 환경에서 접속하면 기록이 사라질 수 있어요.',note:'소중한 탐구 기록은 작업을 마칠 때마다 꼭 백업 파일로 저장해 주세요',begin:'나중에 계속하기 →',backup:'↓ 지금 백업 파일 저장하기',footer:'나비의 안내 • 첫 주제나 노트를 저장한 뒤 한 번만 표시돼요. 위쪽 백업 버튼에서 다시 확인할 수 있어요'},
-  'zh-CN':{overline:'完成第一步 / 重要提示',title:'进入下一步之前，请注意！',copy:'主题和笔记会自动保存在当前浏览器中。但更换设备、清除网站数据或更换浏览环境时，记录可能丢失。',note:'请在完成阶段性工作后，务必下载备份文件',begin:'稍后再继续 →',backup:'↓ 立即下载备份',footer:'纳比提醒 · 首次保存主题或笔记后显示一次，也可点击顶部的备份按钮查看'},
-  'zh-TW':{overline:'完成第一步 / 重要提醒',title:'進入下一步之前，請注意！',copy:'主題與筆記會自動儲存在目前的瀏覽器中。但更換裝置、清除網站資料或改用其他瀏覽環境時，紀錄可能遺失。',note:'請在每個階段完成後，務必下載備份檔案',begin:'稍後再繼續 →',backup:'↓ 立即下載備份',footer:'納比提醒 · 首次儲存主題或筆記後顯示一次，也可點選上方的備份按鈕查看'}
+  ja:{overline:'はじめての記録 / 大切なお知らせ',title:'⚠ 記録が消える可能性があります',copy:'入力内容はこの端末に自動保存されます。でも、サイト更新時の不具合や端末変更・ブラウザデータの削除などで消える場合があります。',note:'必ず下の「バックアップを保存」を押して、記録をファイルに残してください',begin:'あとで続ける →',backup:'↓ バックアップを保存する',footer:'ナビィからのお知らせ • 最初のテーマ・ノート保存後に一度だけ表示します。右上の「バックアップ」からも確認できます'},
+  en:{overline:'ONE STEP DONE / IMPORTANT',title:'⚠ Your research could be lost',copy:'Your work is saved on this device, but it may be lost after an update issue, a device change, or clearing browser data.',note:'Press “Save a backup” below to keep a copy of your work',begin:'Continue for now →',backup:'↓ Save a backup',footer:'A note from Navii • Shown once after your first topic or note save. See Backup at the top anytime'},
+  ko:{overline:'첫 단계 완료 / 중요 안내',title:'⚠ 탐구 기록이 사라질 수 있어요',copy:'기록은 이 기기에 자동 저장되지만 사이트 업데이트 오류, 기기 변경, 브라우저 데이터 삭제 등으로 사라질 수 있어요.',note:'아래의 ‘백업 저장’ 버튼을 눌러 꼭 파일로 보관해 주세요',begin:'나중에 계속하기 →',backup:'↓ 백업 파일 저장',footer:'나비의 안내 • 첫 주제나 노트를 저장한 뒤 한 번만 표시돼요. 위쪽 백업 버튼에서 다시 확인할 수 있어요'},
+  'zh-CN':{overline:'完成第一步 / 重要提示',title:'⚠ 探究记录可能丢失',copy:'内容会自动保存在本设备上，但网站更新异常、更换设备或清除浏览器数据后，记录仍可能丢失。',note:'请点击下方“保存备份”，务必将记录保存在文件中',begin:'稍后再继续 →',backup:'↓ 保存备份',footer:'纳比提醒 · 首次保存主题或笔记后显示一次，也可点击顶部的备份按钮查看'},
+  'zh-TW':{overline:'完成第一步 / 重要提醒',title:'⚠ 探究紀錄可能遺失',copy:'內容會自動儲存在此裝置上，但網站更新異常、更換裝置或清除瀏覽器資料後，紀錄仍可能遺失。',note:'請按下方「儲存備份」，務必將紀錄留存在檔案中',begin:'稍後再繼續 →',backup:'↓ 儲存備份',footer:'納比提醒 · 首次儲存主題或筆記後顯示一次，也可點選上方的備份按鈕查看'}
 };
 function backupCopy(){return BACKUP_COPY[lang]||BACKUP_COPY.ja}
 function hasResearchData(){return Boolean(data.project.topic.trim()||data.project.purpose.trim()||data.project.known.trim()||data.project.unknown.trim()||data.notes.length||data.tasks.length||data.done.some(Boolean))}
@@ -1604,5 +1610,21 @@ for(const id of ['nextTip','nextTipMobile'])$(id).addEventListener('click',()=>{
 $('newIdea').addEventListener('click',()=>{ideaIndex=(ideaIndex+1)%IDEAS.length;renderIdea()});
 if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(()=>{if(document.visibilityState==='visible'){tipIndex=(tipIndex+1)%TIPS.length;renderTip()}},28000);
 syncLang();syncBloomWords();$('saveNote').textContent=editingId?T('更新を保存 →'):T('＋ ノートを追加');if(editingId)$('cancelEdit').classList.remove('hidden');
+})();
+</script><script id="operator-banner-script">
+(()=>{
+  const names={ja:'お知らせ',en:'Notice',ko:'공지','zh-CN':'公告','zh-TW':'公告'};
+  let current=null;
+  function paint(){
+    const box=document.getElementById('operatorBanner');if(!box)return;
+    const v=document.getElementById('languageSelect')?.value||'ja';
+    const msg=current?.notice?.[v]||current?.notice?.ja||'';
+    document.getElementById('operatorBannerLabel').textContent=names[v]||names.ja;
+    document.getElementById('operatorBannerText').textContent=msg;
+    box.hidden=!msg.trim();
+  }
+  document.getElementById('languageSelect')?.addEventListener('change',paint);
+  document.getElementById('bwLocale')?.addEventListener('change',()=>setTimeout(paint,0));
+  fetch('/api/site-config',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(data=>{if(data){current=data;paint()}}).catch(()=>{});
 })();
 </script></body></html>
