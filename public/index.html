@@ -1006,6 +1006,22 @@ body.bloom-open{overflow:hidden}
 .operator-banner-body strong{color:#8e5c2b;white-space:nowrap}.operator-banner-body p{margin:0;overflow-wrap:anywhere}
 @media(max-width:600px){.operator-banner-body{padding:12px;font-size:12px;flex-direction:column;gap:3px}}
 </style>
+
+<style id="pv-inline-preparation-style">
+/* Only the sound notice gets a small, real progress indicator below OK / Cancel. */
+#pvSecondNotice .pv-second-load{margin:14px 1px 4px;text-align:left;color:#697681;font:750 12px/1.5 'Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif;letter-spacing:.035em}
+#pvSecondNotice .pv-second-load-track{height:5px;margin-top:8px;overflow:hidden;background:#e6e9e8;border-radius:99px;box-shadow:inset 0 1px 2px #17202b0d}
+#pvSecondNotice .pv-second-load-track>span{display:block;width:0%;height:100%;border-radius:inherit;background:linear-gradient(90deg,#88b8b0,#426f86);transition:width .24s ease-out}
+#pvSecondNotice .pv-second-load[data-state="ready"]{color:#376e62}
+#pvSecondNotice .pv-second-load[data-state="ready"] .pv-second-load-track>span{background:#5a9a83}
+#pvSecondNotice .pv-second-load[data-state="error"]{color:#9d654e}
+#pvSecondNotice .pv-second-load[data-state="error"] .pv-second-load-track>span{background:#cf9065}
+#pvSecondNotice .pv-second-save:disabled{opacity:.42!important;box-shadow:none!important;filter:grayscale(.2);cursor:not-allowed!important;transform:none!important}
+#pvSecondNotice .pv-second-save:disabled:hover{transform:none!important;box-shadow:none!important}
+@media(prefers-reduced-motion:reduce){#pvSecondNotice .pv-second-load-track>span{transition:none}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@700&amp;family=Noto+Sans+Devanagari:wght@700&amp;family=Noto+Sans+Thai:wght@700&amp;family=Noto+Sans:wght@700&amp;display=swap" rel="stylesheet"/>
 </head><body><a class="skip" href="#home"><span data-tr="本文へ">本文へ</span></a><header class="topbar"><div class="wrap top-inner"><div class="brand"><span class="brand-mark"><img alt="" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTciIGZpbGw9IiM2YzliODUiLz48cGF0aCBkPSJNMTQgMThxMTgtNyAzMiA0djMwcS0xNi0xMC0zMi00WiIgZmlsbD0iI2ZmZmFmMCIgc3Ryb2tlPSIjMzI1NDViIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMzEgMjB2MjkiIHN0cm9rZT0iIzhjYmQ5YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTM5IDE3cTEtOSAxMi05LTIgMTEtMTIgOVoiIGZpbGw9IiNkNWVhYTkiLz48L3N2Zz4=" width="40"/></span><span data-tr="探究ナビ">探究ナビ</span></div><div class="locale-picker" title="Language / 言語"><label class="visually-hidden" for="languageSelect" id="languageLabel"><span data-tr="言語">言語</span></label><span aria-hidden="true" class="locale-control"><svg aria-hidden="true" class="translate-symbol" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3H2"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><svg aria-hidden="true" class="translate-caret" fill="none" viewbox="0 0 12 12"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path></svg></span><select aria-label="表示言語を選択" data-tr-aria-label="表示言語" id="languageSelect" title="Language / 言語を選択"><option value="ja">日本語</option><option value="en">English</option><option value="ko">한국어</option><option value="zh-CN">简体中文</option><option title="繁體中文（台灣）" value="zh-TW">繁體中文</option></select></div><div aria-live="polite" class="save" id="status">✓ 自動保存</div><button type="button" id="backupBadge" class="bw-status" aria-haspopup="dialog" title="バックアップについて">⚠ バックアップ</button></div></header><div id="operatorBanner" hidden role="status" aria-live="polite"><div class="operator-banner-body"><strong id="operatorBannerLabel">お知らせ</strong><p id="operatorBannerText"></p></div></div><main class="wrap"><div class="intro"><div><h1 id="pageTitle">今日の探究</h1><p id="pageSub">続きから、さくっと始めよう。</p></div></div><div class="layout"><aside class="sidebar"><nav aria-label="メインメニュー" class="nav" data-tr-aria-label="メインメニュー" id="sidebarNav"></nav><div aria-label="探究の小さなヒント" class="daily-sticky" data-tr-aria-label="探究の小さなヒント">
 <div class="daily-sticky-top"><span><span data-tr="今日のふせん">今日のふせん</span></span><span aria-hidden="true" class="mini-paperclip">⌇</span></div>
 <p aria-live="polite" id="dailyTip">ひとつ調べると、ひとつ見えてくる。</p>
@@ -2145,15 +2161,15 @@ const strings={
 };
 const locale=()=>strings[currentLang()]||strings.ja;
 const trigger=document.createElement('div');
-trigger.id='pvEntry';trigger.innerHTML='<button id="pvTeaserLink" type="button" aria-haspopup="dialog"><span id="pvLinkText">本格注意喚起を見る</span> <span aria-hidden="true">↗</span></button><p id="pvTeaserNote">演出を再生します。</p>';
+trigger.id='pvEntry';trigger.innerHTML='<button id="pvTeaserLink" type="button" aria-haspopup="dialog"><span id="pvLinkText">？？？</span><span aria-hidden="true">→</span></button><p id="pvTeaserNote"></p>';
 $('bwFooter').insertAdjacentElement('afterend',trigger);
 const NOTICE_LANG={
- ja:['本格注意喚起を見る','保存について、もう少し詳しく。','本格注意喚起を表示しますか？','音楽・点滅・速い画面切り替えを含む演出に入ります。','よろしければ、そのまま再生を始めます。','記録を守るために。','おっけー','キャンセル','ところで…◾️◾️？','※ いつでも終了できます。'],
- en:['View important backup notice','More about keeping your work safe.','Protect your research.','Even unfinished notes are worth keeping.','Browser autosave alone cannot protect against device changes or deleted site data.','Export a separate backup file.','OK','Cancel','By the way…?','The next sequence has music and rapid cuts. You can exit anytime.'],
- ko:['중요한 백업 안내 보기','기록을 지키는 방법을 자세히.','탐구 기록을 지키세요.','완성되지 않은 메모도 소중한 기록입니다.','브라우저 자동 저장만으로는 기기 변경이나 데이터 삭제에 대비할 수 없습니다.','별도의 백업 파일을 저장하세요.','확인','취소','그런데……?','다음 장면에는 음악과 빠른 화면 전환이 포함됩니다. 언제든 종료할 수 있습니다.'],
- 'zh-CN':['查看重要备份提醒','进一步了解保存记录。','守护你的探究记录。','尚未完成的笔记也很有价值。','仅靠浏览器自动保存，无法应对设备更换或站点数据被清除。','建议另外导出备份文件。','确定','取消','话说回来……？','后续包含音乐和快速画面切换，随时可以退出。'],
- 'zh-TW':['查看重要備份提醒','進一步了解保存紀錄。','守護你的探究紀錄。','尚未完成的筆記也很有價值。','僅靠瀏覽器自動儲存，無法應對裝置更換或網站資料被清除。','建議另外匯出備份檔案。','確定','取消','話說回來……？','後續包含音樂和快速畫面切換，隨時可以離開。']};
-function syncLang(){const a=NOTICE_LANG[currentLang()]||NOTICE_LANG.ja;$('pvLinkText').textContent=a[0];$('pvTeaserNote').textContent=a[1];if($('pvSecondNotice'))paintSecondNotice();}
+ ja:['？？？','','音が流れます','','','','おっけー','キャンセル','','※ 点滅・速い画面切り替えがあります。いつでも終了できます。'],
+ en:['???','','Sound will play.','','','','OK','Cancel','','Flashing effects and rapid cuts. You can exit anytime.'],
+ ko:['???','','소리가 재생됩니다.','','','','확인','취소','','화면 점멸과 빠른 화면 전환이 포함됩니다. 언제든 종료할 수 있습니다.'],
+ 'zh-CN':['???','','将播放声音。','','','','确定','取消','','含闪烁效果和快速画面切换，可随时退出。'],
+ 'zh-TW':['???','','將播放聲音。','','','','確定','取消','','含閃爍效果和快速畫面切換，可隨時離開。']};
+function syncLang(){const a=NOTICE_LANG[currentLang()]||NOTICE_LANG.ja;$('pvLinkText').textContent=a[0];$('pvTeaserNote').textContent=a[1];$('pvTeaserNote').hidden=!a[1];if($('pvSecondNotice'))paintSecondNotice();}
 
 syncLang();$('languageSelect')?.addEventListener('change',syncLang);$('bwLocale')?.addEventListener('change',()=>setTimeout(syncLang,0));
 const theater=document.createElement('dialog');theater.id='pvTheater';theater.setAttribute('aria-label','探究ナビ 文字PV');
@@ -2193,14 +2209,49 @@ theater.insertBefore(fixedUI,finalUI);
 
 // The supplementary warning is deliberately a conventional, second modal.
 const second=document.createElement('dialog');second.id='pvSecondNotice';
-second.setAttribute('aria-label','探究記録についての追加の注意喚起');
-second.innerHTML=`<section class="pv-second-card"><div class="pv-second-stripes"></div><div class="pv-second-frame"><div class="pv-second-top"><span>✳ TANKYU NAVI</span><span>DATA SAFETY / 02</span></div><div class="pv-second-symbol" aria-hidden="true">!</div><div class="pv-second-eyebrow">A REMINDER ABOUT YOUR RESEARCH</div><h2 id="pvSecondTitle">記録を守るために。</h2><p id="pvSecondP1"></p><p id="pvSecondP2"></p><div class="pv-second-key" id="pvSecondKey"></div><div class="pv-second-actions"><button id="pvSecondBackup" type="button" class="pv-second-save"></button><button id="pvSecondClose" type="button" class="pv-second-close"></button></div><div class="pv-second-break"><span>· · ·</span></div><button id="pvSecondMeanwhile" type="button" class="pv-second-meanwhile"><span class="pv-second-continue"><span id="pvSecondMeanwhileText"></span><span aria-hidden="true">↗</span></span></button><p id="pvSecondSub" class="pv-second-sub"></p></div><div class="pv-second-stripes bottom"></div></section>`;
+second.setAttribute('aria-label','再生前の音声案内');
+second.innerHTML=`<section class="pv-second-card"><div class="pv-second-stripes"></div><div class="pv-second-frame"><div class="pv-second-top"><span>✳ TANKYU NAVI</span><span>AUDIO / NOTICE</span></div><div class="pv-second-symbol" aria-hidden="true">!</div><div class="pv-second-eyebrow">PLAYBACK NOTICE</div><h2 id="pvSecondTitle">音が流れます</h2><p id="pvSecondP1"></p><p id="pvSecondP2"></p><div class="pv-second-key" id="pvSecondKey"></div><div class="pv-second-actions"><button id="pvSecondBackup" type="button" class="pv-second-save" disabled></button><button id="pvSecondClose" type="button" class="pv-second-close"></button></div><div class="pv-second-load" id="pvSecondLoad" data-state="loading" role="status" aria-live="polite"><span id="pvSecondLoadText">読み込み中…</span><div class="pv-second-load-track" id="pvSecondLoadTrack" role="progressbar" aria-label="文字PVの準備" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="pvSecondLoadFill"></span></div></div><div class="pv-second-break"><span>· · ·</span></div><button id="pvSecondMeanwhile" type="button" class="pv-second-meanwhile"><span class="pv-second-continue"><span id="pvSecondMeanwhileText"></span><span aria-hidden="true">↗</span></span></button><p id="pvSecondSub" class="pv-second-sub"></p></div><div class="pv-second-stripes bottom"></div></section>`;
 document.body.append(second);
-function paintSecondNotice(){const a=NOTICE_LANG[currentLang()]||NOTICE_LANG.ja;const ids=['pvSecondTitle','pvSecondP1','pvSecondP2','pvSecondKey','pvSecondBackup','pvSecondClose','pvSecondSub'];const idx=[2,3,4,5,6,7,9];ids.forEach((id,i)=>$(id).textContent=a[idx[i]]);$('pvSecondMeanwhileText').textContent=''}
-function showSecondNotice(){paintSecondNotice();if(!second.open)second.showModal();$('pvSecondBackup').focus({preventScroll:true})}
-function closeSecondNotice(){if(second.open)second.close()}
+const PV_PREP_LANG={
+  ja:['読み込み中…','準備完了 ✓','読み込みに失敗しました。キャンセルして、もう一度開いてください。','この環境では新版の文字PVを再生できません。'],
+  en:['Loading…','Ready ✓','Loading failed. Select Cancel and open this again.','This browser cannot play the new typography film.'],
+  ko:['불러오는 중…','준비 완료 ✓','불러오기에 실패했습니다. 취소 후 다시 열어 주세요.','이 브라우저에서는 새 문자 PV를 재생할 수 없습니다.'],
+  'zh-CN':['加载中…','准备完成 ✓','加载失败。请取消后重新打开。','此浏览器无法播放新版文字 PV。'],
+  'zh-TW':['載入中…','準備完成 ✓','載入失敗。請取消後重新開啟。','此瀏覽器無法播放新版文字 PV。']};
+let pvSecondLoadState='loading',pvSecondLoadValue=0,pvSecondLoadTicket=0;
+function paintSecondLoad(){
+ const a=PV_PREP_LANG[currentLang()]||PV_PREP_LANG.ja;
+ const mode=pvSecondLoadState;
+ $('pvSecondLoadText').textContent=a[mode==='ready'?1:mode==='error'?2:mode==='unsupported'?3:0] + (mode==='loading'&&pvSecondLoadValue>0?' '+Math.floor(pvSecondLoadValue*100)+'%':'');
+ $('pvSecondLoad').dataset.state=mode==='unsupported'?'error':mode;
+ $('pvSecondLoadFill').style.width=(Math.max(0,Math.min(1,pvSecondLoadValue))*100).toFixed(1)+'%';
+ $('pvSecondLoadTrack').setAttribute('aria-valuenow',String(Math.round(pvSecondLoadValue*100)));
+ $('pvSecondBackup').disabled=mode!=='ready';
+ $('pvSecondBackup').setAttribute('aria-disabled',String(mode!=='ready'));
+}
+function setSecondLoad(mode,value){pvSecondLoadState=mode;pvSecondLoadValue=Math.max(0,Math.min(1,Number(value)||0));paintSecondLoad()}
+function paintSecondNotice(){const a=NOTICE_LANG[currentLang()]||NOTICE_LANG.ja;const ids=['pvSecondTitle','pvSecondP1','pvSecondP2','pvSecondKey','pvSecondBackup','pvSecondClose','pvSecondSub'];const idx=[2,3,4,5,6,7,9];ids.forEach((id,i)=>{const el=$(id);el.textContent=a[idx[i]];if(i===1||i===2||i===3)el.hidden=!a[idx[i]];});$('pvSecondMeanwhileText').textContent='';paintSecondLoad()}
+function startSecondPreparation(){
+ const ticket=++pvSecondLoadTicket;
+ setSecondLoad('loading',0);
+ if(!window.PV2||!window.PV2.supported()){setSecondLoad('unsupported',0);return}
+ try{
+  Promise.resolve(window.PV2.preload(p=>{
+   if(ticket!==pvSecondLoadTicket||!second.open||pvSecondLoadState!=='loading')return;
+   setSecondLoad('loading',Math.max(pvSecondLoadValue,p));
+  })).then(ok=>{
+   if(ticket!==pvSecondLoadTicket||!second.open)return;
+   setSecondLoad(ok?'ready':'error',ok?1:pvSecondLoadValue);
+  }).catch(e=>{
+   console.warn('[pv2] preparation failed',e);
+   if(ticket===pvSecondLoadTicket&&second.open)setSecondLoad('error',pvSecondLoadValue);
+  });
+ }catch(e){console.warn('[pv2] preparation unavailable',e);setSecondLoad('error',0)}
+}
+function showSecondNotice(){paintSecondNotice();if(!second.open)second.showModal();$('pvSecondClose').focus({preventScroll:true});startSecondPreparation()}
+function closeSecondNotice(){pvSecondLoadTicket++;if(second.open)second.close()}
 $('pvSecondClose').addEventListener('click',closeSecondNotice);
-$('pvSecondBackup').addEventListener('click',()=>{closeSecondNotice();launch()});
+$('pvSecondBackup').addEventListener('click',()=>{if($('pvSecondBackup').disabled)return;closeSecondNotice();launch()});
 second.addEventListener('cancel',e=>{e.preventDefault();closeSecondNotice()});
 
 const audio=$('pvMusic'),movie=$('pvMovie'),intro=$('pvPhaseIntro'),error=$('pvPhaseError'),popups=$('pvPopups');
@@ -2442,7 +2493,7 @@ if(t>=PV_START){let n=0;for(let i=1;i<cues.length;i++){if(t>=cues[i][0])n=i;else
 if(t>=65.1&&t<69.1)updateCredits(t);const curtain=$('pvOutroCurtain');if(curtain)curtain.style.opacity=t>=69.05?String(Math.min(.75,Math.max(0,(t-69.05)/1.75)*.75)):'0';if(haveAudio&&t>69.0){audio.volume=Math.max(.05,(Number($('pvVolume').value)/100)*(1-(t-69)/2.2));}if(t>=45.5&&t<=64.7&&$('pvDepth').classList.contains('active')){let p=(t-45.5)/19;let turn=Math.sin(p*Math.PI*4.2)*20;let tilt=Math.cos(p*Math.PI*2.8)*9;let zoom=150+(p*p*(3-2*p))*2350;$('pvRoom').style.transform=`translateZ(${zoom}px) rotateY(${turn}deg) rotateX(${tilt}deg) rotateZ(${Math.sin(p*5.3)*3.9}deg)`;$('pvTextZone').style.transform=`perspective(1300px) translate3d(${Math.sin(p*11)*1.4}vw,${Math.cos(p*7)*1.1}vh,0) rotateY(${Math.sin(p*Math.PI*4.2)*7.5}deg) rotateX(${Math.cos(p*Math.PI*3.1)*4.2}deg) scale(${(1.01+p*.04).toFixed(3)})`;$('pvVisual').style.transform=`translate3d(${Math.sin(p*9)*.8}vw,${Math.cos(p*8)*.6}vh,0) scale(${(1+p*.02).toFixed(3)})`;}else{$('pvTextZone').style.transform='';$('pvVisual').style.transform='';}
 if(t>=TOTAL){finish();return}raf=requestAnimationFrame(tick);}
 function finish(){if(endReached)return;endReached=true;if(prevCue!==cues.length-1)setScene(cues.length-1);showFinalButtons();setChrono(TOTAL);audio.pause();playing=false;paused=false;cancelAnimationFrame(raf);}
-function launch(){if(theater.open)return;if(window.PV2&&window.PV2.supported()){closeSecondNotice();window.PV2.launch(launchLegacy);return}launchLegacy()}function launchLegacy(){if(theater.open)return;fixedUI.classList.remove('active');pvApplyQuality();pvSeenFrames=0;pvSlowFrames=0;hideFinalButtons();const l=locale();$('pvFakeNotice').textContent=l.fiction;closeSecondNotice();theater.showModal();theater.focus();intro.style.display='grid';intro.style.opacity='1';$('pvRewriteShell').className='pv-rewrite-shell';$('pvTypeText').textContent='';$('pvRewriteTitle').textContent='';$('pvRewriteDetail').textContent='';$('pvRewriteBody').textContent='';const lang=currentLang();$('pvRewriteContent').querySelector('.pv-rewrite-key').textContent=(lang==='en'?'DATA SAFETY / PLAYBACK':'DATA SAFETY / PLAYBACK');error.className='pv-phase-error';popups.replaceChildren();movie.classList.remove('active','shake','search-flare','pv-end-mode','pv-credit-mode');movie.setAttribute('aria-hidden','true');$('pvTextZone').replaceChildren();$('pvVisual').replaceChildren();$('pvRoom').replaceChildren();$('pvDepth').classList.remove('active');reactiveCtx?.clearRect(0,0,reactiveCanvas.width,reactiveCanvas.height);prevCue=-1;nextWindow=0;lastBeat=-1;endReached=false;paused=false;playing=true;haveAudio=true;startedAt=performance.now();audio.pause();try{audio.currentTime=0}catch{};audio.volume=Number($('pvVolume').value)/100;$('pvOutroCurtain').style.opacity='0';setupAudio();audioCtx?.resume().catch(()=>{});const p=audio.play();if(p&&p.catch)p.catch(e=>{console.warn('Audio did not start; silent timeline fallback',e);haveAudio=false;startedAt=performance.now();});raf=requestAnimationFrame(tick);}
+function launch(){if(theater.open)return;if(window.PV2&&window.PV2.supported()){closeSecondNotice();window.PV2.launch();return}const sub=$('pvSecondSub');if(sub)sub.textContent=({ja:'この環境では新しい文字PVを再生できません。WebGL2対応のブラウザで開いてください。',en:'This browser cannot play the new typography film. Please use a WebGL2-capable browser.',ko:'이 브라우저에서는 새 영상이 지원되지 않습니다. WebGL2 지원 브라우저를 사용하세요.','zh-CN':'此浏览器无法播放新版文字影像，请使用支持 WebGL2 的浏览器。','zh-TW':'此瀏覽器無法播放新版文字影片，請使用支援 WebGL2 的瀏覽器。'})[currentLang()]||'WebGL2 unavailable.';}function launchLegacy(){if(theater.open)return;fixedUI.classList.remove('active');pvApplyQuality();pvSeenFrames=0;pvSlowFrames=0;hideFinalButtons();const l=locale();$('pvFakeNotice').textContent=l.fiction;closeSecondNotice();theater.showModal();theater.focus();intro.style.display='grid';intro.style.opacity='1';$('pvRewriteShell').className='pv-rewrite-shell';$('pvTypeText').textContent='';$('pvRewriteTitle').textContent='';$('pvRewriteDetail').textContent='';$('pvRewriteBody').textContent='';const lang=currentLang();$('pvRewriteContent').querySelector('.pv-rewrite-key').textContent=(lang==='en'?'DATA SAFETY / PLAYBACK':'DATA SAFETY / PLAYBACK');error.className='pv-phase-error';popups.replaceChildren();movie.classList.remove('active','shake','search-flare','pv-end-mode','pv-credit-mode');movie.setAttribute('aria-hidden','true');$('pvTextZone').replaceChildren();$('pvVisual').replaceChildren();$('pvRoom').replaceChildren();$('pvDepth').classList.remove('active');reactiveCtx?.clearRect(0,0,reactiveCanvas.width,reactiveCanvas.height);prevCue=-1;nextWindow=0;lastBeat=-1;endReached=false;paused=false;playing=true;haveAudio=true;startedAt=performance.now();audio.pause();try{audio.currentTime=0}catch{};audio.volume=Number($('pvVolume').value)/100;$('pvOutroCurtain').style.opacity='0';setupAudio();audioCtx?.resume().catch(()=>{});const p=audio.play();if(p&&p.catch)p.catch(e=>{console.warn('Audio did not start; silent timeline fallback',e);haveAudio=false;startedAt=performance.now();});raf=requestAnimationFrame(tick);}
 function exit(){fixedUI.classList.remove('active');hideFinalButtons();playing=false;paused=false;cancelAnimationFrame(raf);audio.pause();try{audio.currentTime=0}catch{};$('pvOutroCurtain').style.opacity='0';if(theater.open)theater.close();intro.style.display='grid';movie.classList.remove('active','search-flare','pv-end-mode','pv-credit-mode');error.classList.remove('active');popups.replaceChildren();$('pvTextZone').replaceChildren();$('pvVisual').replaceChildren();$('pvRoom').replaceChildren();$('pvDepth').classList.remove('active');$('pvTextZone').style.transform='';$('pvVisual').style.transform='';$('pvProgress').style.width='0%';closeSecondNotice();$('pvTeaserLink').focus({preventScroll:true});}
 function restart(){exit();launch()}
 finalUI.querySelector('#pvFinalReplayButton').addEventListener('click',e=>{e.stopPropagation();restart()});
@@ -2576,7 +2627,8 @@ const FONTS = {
   serif:  { w: 900, f: '"Zen Old Mincho","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif' },
   gothic: { w: 900, f: '"Zen Kaku Gothic New","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif' },
   dot:    { w: 400, f: '"DotGothic16","M PLUS 1 Code","Noto Sans JP",monospace' },
-  reggae: { w: 400, f: '"RocknRoll One","Yusei Magic","Noto Sans JP","Hiragino Sans",sans-serif' }
+  reggae: { w: 400, f: '"RocknRoll One","Yusei Magic","Noto Sans JP","Hiragino Sans",sans-serif' },
+  world: { w: 700, f: '"Noto Sans","Noto Sans JP","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans Thai","Noto Sans KR","Noto Sans SC",sans-serif' }
 };
 const FONTSPEC = (role, px) => `${(FONTS[role] || FONTS.heavy).w} ${px}px ${(FONTS[role] || FONTS.heavy).f}`;
 
@@ -3088,6 +3140,14 @@ function edt1d(grid, offset, stride, length, f, v, z) {
   for (let q = 0, k = 0; q < length; q++) { while (z[k + 1] < q) k++; const r = v[k], qr = q - r; grid[offset + q * stride] = f[r] + qr * qr; }
 }
 
+// International variations for the FINAL tiled WHY shot only; no changes to earlier shots.
+const WHY_MULTILINGUAL = [
+ 'なぜ？', 'WHY?', '왜?', '为什么？', '為什麼？',
+ '¿POR QUÉ?', 'POURQUOI ?', 'WARUM?', 'PERCHÉ?', 'POR QUÊ?',
+ 'ПОЧЕМУ?', 'لماذا؟', 'क्यों?', 'ทำไม?', 'TẠI SAO?',
+ 'NEDEN?', 'MENGAPA?', 'ΓΙΑΤΙ?', 'DLACZEGO?', 'WAAROM?'
+];
+
 /* ---------- world: palettes, typography blocks, shots, camera, per-frame instance building ---------- */
 const hex = h => [parseInt(h.slice(1, 3), 16) / 255, parseInt(h.slice(3, 5), 16) / 255, parseInt(h.slice(5, 7), 16) / 255];
 const PAL = [
@@ -3257,7 +3317,21 @@ function buildWorld(lang) {
     T(s, W[(i + 4) % 8], { role: roles[(i + 1) % 4], hero: true, em: 2.7, anim: i % 2 ? 'zoom' : 'pop', t0: 0, st: .04, dur: .22, col: i % 3 === 0 ? 1 : 0 }); }
   /* ---- 25: tiling whys (u92-96) ---- */
   s = S(92, 96, 8, { cam: { d: [9, 34], yaw: [.2, -.3], roll: [0, .5], fov: [50, 62], ease: 'in' }, bg: [1, 1, .6, 0, 2.4, 1, 1.3], bloom: 1.1, kg: .5, kc: .005, fogF: 120 });
-  { const gridN = [1, 3, 5, 7]; let k = 0; for (let b = 0; b < 4; b++) { const n = gridN[b]; for (let iy = 0; iy < n; iy++) for (let ix = 0; ix < n; ix++) { if (b > 0 && Math.abs(ix - (n - 1) / 2) < (gridN[b - 1] - 1) / 2 + .1 && Math.abs(iy - (n - 1) / 2) < (gridN[b - 1] - 1) / 2 + .1) continue; const x = (ix - (n - 1) / 2) * 5.2, y = (iy - (n - 1) / 2) * 3.4; const ch = Array.from(L.whys[k++ % 5]); T(s, ch.join(''), { role: ['heavy', 'serif', 'gothic', 'reggae', 'thin'][k % 5], hero: false, em: 1.5, x, y, z: -b * .5, anim: 'pop', t0: b * 1 + hash(k) * .12, st: .04, dur: .3, col: k % 4 ? 0 : 1, t1: 3.45, outd: .5 }); } } }
+  { const gridN = [1, 3, 5, 7, 9], words = [...L.whys, ...WHY_MULTILINGUAL.filter(q => !L.whys.includes(q))];
+    let k = 0;
+    for (let b = 0; b < gridN.length; b++) {
+      const n = gridN[b];
+      for (let iy = 0; iy < n; iy++) for (let ix = 0; ix < n; ix++) {
+        if (b > 0 && Math.abs(ix - (n - 1) / 2) < (gridN[b - 1] - 1) / 2 + .1 && Math.abs(iy - (n - 1) / 2) < (gridN[b - 1] - 1) / 2 + .1) continue;
+        const x = (ix - (n - 1) / 2) * 4.2, y = (iy - (n - 1) / 2) * 2.9;
+        const text = words[k % words.length];
+        T(s, text, { role: 'world', hero: false, em: b < 2 ? 1.65 : 1.16,
+          x, y, z: -b * .54, anim: 'pop', t0: b * .72 + hash(k + 73) * .09,
+          st: .015, dur: .22, col: k % 4 ? 0 : 1, t1: 3.5, outd: .35 });
+        k++;
+      }
+    }
+  }
   EVT(s, 3.45, 'glitch', .7, .1);
   /* ---- 26: finale (u96-100, u100-104) ---- */
   s = S(96, 100, 0, { cam: { d: [14, 9.6], yaw: [-.35, .3], roll: [.05, -.04], pit: [.1, 0] }, bg: [1, .6, .8, 0, 1.8, 1.2, 1.5], bloom: 1.3, kg: .5, kc: .006, vig: .8, fogF: 90 });
@@ -3697,7 +3771,7 @@ let $dlg, $cv, $movie, $intro, $err, $pops, $vis, $fixed, $final;
 /* ---------- CSS: clone every legacy "#pvTheater …" rule so the new dialog inherits the same look without touching the old code ---------- */
 function cloneThemeCss() {
   if (document.getElementById('pv2-cloned-css')) return;
-  const out = [];
+  const out = [], consentRules = [];
   for (const sh of Array.from(document.styleSheets)) {
     let rules; try { rules = sh.cssRules; } catch (e) { continue; }
     if (!rules) continue;
@@ -3705,17 +3779,15 @@ function cloneThemeCss() {
       const t = r.cssText;
       if (t.indexOf('#pvTheater') >= 0 || t.indexOf('#pvQuality') >= 0 || t.indexOf('#pvVisual') >= 0)
         out.push(t.split('#pvTheater').join('#pv2Theater').split('#pvQuality').join('#pv2Quality').split('#pvVisual').join('#pv2Visual'));
+      if (t.indexOf('#pvSecondNotice') >= 0) consentRules.push(t.split('#pvSecondNotice').join('#pv2ConsentSnapshot'));
     }
   }
-  const st = document.createElement('style'); st.id = 'pv2-cloned-css'; st.textContent = out.join('\n'); document.head.append(st);
+  const st = document.createElement('style'); st.id = 'pv2-cloned-css'; st.textContent = out.join('\n') + '\n' + consentRules.join('\n'); document.head.append(st);
   const own = document.createElement('style'); own.id = 'pv2-own-css';
   own.textContent = `
 #pv2Theater canvas.pv2-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1;background:#05070c}
 #pv2Theater .pv-visual{z-index:2}
-#pv2Theater .pv2-loader{position:absolute;inset:0;z-index:80;display:grid;place-content:center;justify-items:center;background:#070a11;color:#e9eef5;font:800 13px/1.5 'Zen Kaku Gothic New','Yu Gothic',sans-serif;letter-spacing:.14em;transition:opacity .35s ease}
-#pv2Theater .pv2-loader.done{opacity:0;pointer-events:none}
-#pv2Theater .pv2-loader .bar{width:min(260px,60vw);height:3px;background:#ffffff22;margin-top:14px;overflow:hidden}
-#pv2Theater .pv2-loader .bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#f7d58c,#8eeadf);transition:width .15s linear}
+
 #pv2Theater .pv2-calm{display:inline-flex;gap:6px;align-items:center;color:#eee9f3;font:700 11px/1.2 'Zen Kaku Gothic New','Yu Gothic',sans-serif;cursor:pointer;pointer-events:auto}
 #pv2Theater .pv2-calm input{accent-color:#f9de9e;width:15px;height:15px}
 #pv2Theater .pv-fixed-ui .pv-bottom-control{flex-wrap:wrap}
@@ -3743,6 +3815,20 @@ function cloneThemeCss() {
 @media(prefers-reduced-motion:reduce){#pv2Theater .pv2-director *,#pv2Theater .pv2-director::before,#pv2Theater .pv2-director::after{animation:none!important}}
 @media (prefers-reduced-motion:reduce){#pv2Theater .pv-visual{transform:none!important}}
 `;
+  own.textContent += `
+#pv2Theater.pv2-before-film{background:transparent!important}
+#pv2Theater.pv2-before-film::backdrop{background:rgba(12,18,26,.18);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+#pv2Theater .pv-phase-intro>.pv-rewrite-shell{display:none!important}
+#pv2Theater #pv2ConsentSnapshot{position:absolute!important;inset:0!important;margin:0!important;padding:20px!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;overflow:auto!important;background:rgba(19,28,36,.19)!important;display:grid!important;place-items:center!important;pointer-events:none!important;z-index:1}
+#pv2Theater #pv2ConsentSnapshot .pv-second-card{animation:none!important}
+#pv2Theater #pv2ConsentSnapshot [hidden]{display:none!important}
+#pvTeaserLink span:after{display:none!important}
+#pv2Theater.pv2-before-film #pv2Fixed .pv-bottom,
+#pv2Theater.pv2-before-film #pv2Fixed .pv-hud,
+#pv2Theater.pv2-before-film #pv2Fixed .pv-rail,
+#pv2Theater.pv2-before-film #pv2Fixed .pv-controls button:not(#pv2Exit){display:none!important}
+@media(max-width:600px){#pv2Theater #pv2ConsentSnapshot{padding:12px!important}}
+`;
   document.head.append(own);
 }
 
@@ -3751,7 +3837,7 @@ function buildUI() {
   if (P2.built) return; cloneThemeCss();
   const d = document.createElement('dialog'); d.id = 'pv2Theater'; d.setAttribute('aria-label', '探究ナビ 文字PV');
   d.innerHTML = `
-<div class="pv-phase-intro" id="pv2Intro" aria-hidden="true"><div class="pv-rewrite-shell" id="pv2RewriteShell"><div class="pv-rewrite-card"><div class="pv-rewrite-stripe"></div><div class="pv-rewrite-top"><span>✳ TANKYU NAVI</span><span>DATA SAFETY / 02</span></div><div class="pv-rewrite-content" id="pv2RewriteContent"><div class="pv-rewrite-symbol">!</div><h2 id="pv2RewriteTitle"></h2><p id="pv2RewriteDetail"></p><p id="pv2RewriteBody"></p><div class="pv-rewrite-key">↓ BACKUP / SAVE YOUR WORK</div><div class="pv-rewrite-actions"><i></i><i></i></div></div><div class="pv-rewrite-ink" aria-hidden="true">※　⌫　×　/　□　[　エラー　]　!　_　</div><div class="pv-rewrite-type"><span class="pv-type-prefix" id="pv2TypeText"></span><span class="pv-cursor"></span></div><div class="pv-rewrite-stripe bottom"></div></div></div></div>
+<div class="pv-phase-intro" id="pv2Intro" aria-hidden="true"><div id="pv2ConsentSnapshot" aria-hidden="true"></div><div class="pv-rewrite-shell" id="pv2RewriteShell"><div class="pv-rewrite-card"><div class="pv-rewrite-stripe"></div><div class="pv-rewrite-top"><span>✳ TANKYU NAVI</span><span>DATA SAFETY / 02</span></div><div class="pv-rewrite-content" id="pv2RewriteContent"><div class="pv-rewrite-symbol">!</div><h2 id="pv2RewriteTitle"></h2><p id="pv2RewriteDetail"></p><p id="pv2RewriteBody"></p><div class="pv-rewrite-key">↓ BACKUP / SAVE YOUR WORK</div><div class="pv-rewrite-actions"><i></i><i></i></div></div><div class="pv-rewrite-ink" aria-hidden="true">※　⌫　×　/　□　[　エラー　]　!　_　</div><div class="pv-rewrite-type"><span class="pv-type-prefix" id="pv2TypeText"></span><span class="pv-cursor"></span></div><div class="pv-rewrite-stripe bottom"></div></div></div></div>
 <div class="pv-phase-error" id="pv2Err" aria-hidden="true"><div class="pv-error-scrim"></div><div class="pv-popups" id="pv2Pops"></div><div class="pv-error-flash"></div><div class="pv-fake-notice" id="pv2Fake"></div></div>
 <div class="pv-movie" id="pv2Movie" aria-hidden="true"><canvas class="pv2-canvas" id="pv2Canvas"></canvas><div class="pv-visual" id="pv2Visual"></div><div class="pv2-director" id="pv2Director" aria-hidden="true"><div class="pv2-circles"></div><div class="pv2-metadata" id="pv2Metadata">TYPE / SPACE<br>EXPERIMENT 22</div><div class="pv2-vertical" id="pv2Vertical">問いは、動き続ける。</div></div><div class="pv-outro-curtain" id="pv2Curtain"></div></div>
 <div class="pv-fixed-ui" id="pv2Fixed" aria-label="controls">
@@ -3763,8 +3849,7 @@ function buildUI() {
     <label class="pv-volume" for="pv2Volume"><span id="pv2VolLabel"></span><input id="pv2Volume" type="range" min="0" max="100" value="55"></label></div></div>
   <div class="pv-rail"><span id="pv2Prog"></span></div>
 </div>
-<div class="pv-final-ui" id="pv2Final" aria-hidden="true"><div class="pv-final-buttons"><button type="button" id="pv2Replay"></button><button type="button" id="pv2Return"></button></div></div>
-<div class="pv2-loader" id="pv2Loader"><div id="pv2LoadText">…</div><div class="bar"><span id="pv2LoadBar"></span></div></div>`;
+<div class="pv-final-ui" id="pv2Final" aria-hidden="true"><div class="pv-final-buttons"><button type="button" id="pv2Replay"></button><button type="button" id="pv2Return"></button></div></div>`;
   document.body.append(d);
   $dlg = d; $cv = $('pv2Canvas'); $movie = $('pv2Movie'); $intro = $('pv2Intro'); $err = $('pv2Err'); $pops = $('pv2Pops'); $vis = $('pv2Visual'); $fixed = $('pv2Fixed'); $final = $('pv2Final');
   const meter = $('pv2Meter'); for (let i = 0; i < 19; i++) meter.append(document.createElement('i'));
@@ -3789,7 +3874,7 @@ function paintUI() {
   $('pv2Pause').textContent = P2.paused ? l.resume : l.pause; $('pv2Skip').textContent = l.skip; $('pv2Exit').textContent = l.exit;
   $('pv2VolLabel').textContent = l.volume; $('pv2QLabel').textContent = l.q[0]; $('pv2CalmLabel').textContent = l.calm;
   Array.from($('pv2Quality').options).forEach((o, i) => o.textContent = l.q[i + 1]); $('pv2Quality').value = P2.quality; $('pv2Quality').setAttribute('aria-label', l.q[0]);
-  $('pv2Fake').textContent = l.fiction; $('pv2Replay').textContent = l.replay; $('pv2Return').textContent = l.back; $('pv2LoadText').textContent = l.loading;
+  $('pv2Fake').textContent = l.fiction; $('pv2Replay').textContent = l.replay; $('pv2Return').textContent = l.back;
 }
 
 /* ---------- quality ---------- */
@@ -3825,17 +3910,20 @@ async function loadAnalysis() {
 }
 const EXTRA_CHARS = '？。∞·/.:-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz探究ナビ問無限';
 async function loadFonts(lang) {
-  const s = new Set(Array.from(JSON.stringify(TXT[lang]) + JSON.stringify(TXT.en) + JSON.stringify(TXT.ja.words) + EXTRA_CHARS)); const text = Array.from(s).join('');
+  const s = new Set(Array.from(JSON.stringify(TXT[lang]) + JSON.stringify(TXT.en) + JSON.stringify(TXT.ja.words) + WHY_MULTILINGUAL.join('') + EXTRA_CHARS)); const text = Array.from(s).join('');
   if (!document.fonts || !document.fonts.load) return;
   const job = Promise.all(Object.keys(FONTS).map(r => document.fonts.load(FONTSPEC(r, 40), text).catch(() => [])));
   await Promise.race([job, new Promise(r => setTimeout(r, 9000))]);
 }
 async function ensureAssets(setProg) {
   const lang = currentLang(); setProg(.02);
+  // Fetch font faces while the soundtrack is decoding: they are independent.
+  // The glyph atlas still waits for the fonts, preserving every character's design.
+  const fontJob = loadFonts(lang);
   await loadAudio(); setProg(.12);
   await loadAnalysis(); setProg(.18);
   if (!GLR.gl) { if (!GLR.init($cv)) return false; GLR.onLost = () => { if (P2.open) { console.warn('[pv2] context lost'); failOver(); } }; }
-  await loadFonts(lang); setProg(.3);
+  await fontJob; setProg(.3);
   if (P2.loadedLang !== lang) {
     ATLAS.map.clear(); _adv.clear(); buildWorld(lang);
     // size the atlas for the glyph count (hero tier is 176px cells)
@@ -3848,6 +3936,31 @@ async function ensureAssets(setProg) {
     P2.loadedLang = lang;
   }
   setProg(1); return true;
+}
+// Share one preparation job between the teaser click and the confirmation button.
+// Without this, a quick double click decodes the same audio and generates glyphs twice.
+let pv2WarmJob = null;
+let pv2WarmLanguage = '';
+let pv2WarmProgress = 0;
+let pv2WarmProgressHandler = null;
+function notifyPv2WarmProgress(p) {
+  pv2WarmProgress = Math.max(0,Math.min(1,Number(p)||0));
+  if (typeof pv2WarmProgressHandler==='function') pv2WarmProgressHandler(pv2WarmProgress);
+}
+function warmAssets(onProgress) {
+  const lang = currentLang();
+  if(typeof onProgress==='function') {pv2WarmProgressHandler=onProgress;onProgress(pv2WarmProgress)}
+  if (P2.loadedLang === lang && GLR.gl) {notifyPv2WarmProgress(1);return Promise.resolve(true)}
+  if (pv2WarmJob) {
+    return pv2WarmJob.then(ok => pv2WarmLanguage === currentLang() ? ok : warmAssets(onProgress));
+  }
+  pv2WarmLanguage = lang;
+  notifyPv2WarmProgress(0);
+  const job = (async () => { await AU.init(); return ensureAssets(notifyPv2WarmProgress); })();
+  pv2WarmJob = job;
+  // Do not clear the lock until awaiting callers have observed the result.
+  job.finally(() => { if (pv2WarmJob === job) pv2WarmJob = null; }).catch(() => {});
+  return job;
 }
 
 /* ---------- DOM scenes (browser / result / navii / photos / notes / credits / end) ---------- */
@@ -3893,14 +4006,15 @@ function spawnWindow(i) {
 }
 function syncPhase(T) {
   if (T < T_FILM - .03) {
-    introProgress(T / INTRO_K);
+    // Direct-entry variant: do not render the retired 「ところで…」 typing intro.
+    if (T < T_ERR0) introProgress(T / INTRO_K);
     if (T >= T_ERR0) {
       if (P2.phase < 1) { P2.phase = 1; $err.classList.add('active'); }
       let spawned = 0; while (P2.nextWin < WIN_N && winTime(P2.nextWin) <= T && spawned < 4) { spawnWindow(P2.nextWin); P2.nextWin++; spawned++; }
       if (T >= T_ERR1 - .21 && !$err.classList.contains('sealed')) $err.classList.add('sealed', 'bang');
     } else if (P2.phase < 0) P2.phase = 0;
   } else if (P2.phase < 2) {
-    P2.phase = 2; $movie.classList.add('active'); $movie.setAttribute('aria-hidden', 'false');
+    P2.phase = 2; $dlg.classList.remove('pv2-before-film'); $movie.classList.add('active'); $movie.setAttribute('aria-hidden', 'false');
     $err.classList.remove('active', 'sealed', 'bang'); $intro.style.opacity = '0'; $intro.style.display = 'none'; $pops.replaceChildren();
   }
 }
@@ -3948,13 +4062,20 @@ async function togglePause(force) {
   $('pv2Pause').textContent = p ? ui().resume : ui().pause;
   if (p) await AU.pause(); else await AU.resume();
 }
-function failOver() { const cb = P2.fallback; exit(true); P2.failed = true; if (cb) cb(); }
+function failOver() { exit(true); P2.failed = true; alert('新しい文字PVを再生できません。ブラウザを更新するか、WebGL2対応環境でお試しください。'); }
 
 /* ---------- main loop ---------- */
 const lerpMeter = [];
 function frame(now) {
   P2.raf = requestAnimationFrame(frame); if (!P2.open || !P2.ready) return;
-  const T = AU.now(); if (P2.paused) return;
+  let T = AU.now(); if (P2.paused) return;
+  // Intro safeguard: wall-clock phase progression only if the audio clock is stalled.
+  // This also makes the error cards transition to the WebGL2 film reliably.
+  if (P2.wallBeginMs && (P2.phase < 2 || P2.clockFallback)) {
+    const wallT = P2.wallBeginAt + (now - P2.wallBeginMs) / 1000;
+    if (!Number.isFinite(T) || wallT > T + .85) P2.clockFallback = true;
+    if (P2.clockFallback) T = wallT;
+  }
   syncPhase(T); if (P2.phase < 2) { hud(T, now); return; }
   runCues(T);
   const u = uOf(T);
@@ -4017,10 +4138,11 @@ function resetVisuals() {
   $('pv2RewriteShell').className = 'pv-rewrite-shell';
   for (const id of ['pv2TypeText', 'pv2RewriteTitle', 'pv2RewriteDetail', 'pv2RewriteBody']) $(id).textContent = '';
   $err.className = 'pv-phase-error'; $pops.replaceChildren(); $intro.style.display = 'grid'; $intro.style.opacity = '1';
+  if ($dlg) $dlg.classList.remove('pv2-before-film');
   $movie.classList.remove('active', 'pv-end-mode', 'pv-credit-mode'); $movie.setAttribute('aria-hidden', 'true'); $vis.replaceChildren(); $vis.style.transform = '';
   $final.classList.remove('show'); $final.setAttribute('aria-hidden', 'true'); $('pv2Prog').style.width = '0%';
   P2.directionMode = -1; const deco=$('pv2Director'); if(deco) deco.className='pv2-director';
-  P2.phase = -1; P2.domKey = ''; P2.nextWin = 0; P2.cueIdx = 0; P2.ended = false; P2.finalShown = false; P2.paused = false; P2.frames = 0; P2.dtAvg = 16; P2.lastNow = 0; P2.creditN = -1;
+  P2.phase = -1; P2.wallBeginMs = 0; P2.clockFallback = false; P2.domKey = ''; P2.nextWin = 0; P2.cueIdx = 0; P2.ended = false; P2.finalShown = false; P2.paused = false; P2.frames = 0; P2.dtAvg = 16; P2.lastNow = 0; P2.creditN = -1;
 }
 function webgl2Ok() {
   if (P2.glOk !== undefined) return P2.glOk;
@@ -4035,20 +4157,40 @@ async function launch(fallback) {
   if (P2.open || P2.starting) return; P2.starting = true; P2.fallback = fallback;
   try {
     buildUI(); resetVisuals(); paintUI();
-    await AU.init(); if (AU.ctx) { try { AU.ctx.resume(); } catch (e) { } }   // inside the user gesture
+    // Match the exact confirmation screen the user just clicked; overlay errors on it.
+    const snapshot = $('pv2ConsentSnapshot');
+    const sourceCard = document.querySelector('#pvSecondNotice .pv-second-card');
+    snapshot.replaceChildren();
+    if (sourceCard) {
+      const copy = sourceCard.cloneNode(true);
+      copy.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+      copy.querySelectorAll('button').forEach(el => { el.disabled = true; el.tabIndex = -1; });
+      snapshot.append(copy);
+    }
+    // Start audio initialization during the click gesture; no loading screen is shown.
+    const audioReady = AU.init();
+    $dlg.classList.add('pv2-before-film');
+    $dlg.showModal(); $dlg.focus(); P2.open = true;
+    $err.classList.add('active'); spawnWindow(0); spawnWindow(1); P2.nextWin = 2;
+    $fixed.classList.add('active'); applyQuality(true);
+    await audioReady;
+    if (AU.ctx) { try { AU.ctx.resume(); } catch (e) {} }
     AU.setVolume(Number($('pv2Volume').value) / 100);
-    $('pv2LoadBar').style.width = '0%'; $('pv2Loader').classList.remove('done');
-    $dlg.showModal(); $dlg.focus(); P2.open = true; $fixed.classList.add('active'); applyQuality(true);
-    const ok = await ensureAssets(p => { $('pv2LoadBar').style.width = (p * 100).toFixed(0) + '%'; });
+    const ok = await warmAssets(); // reuse preparation already started on the teaser; no loader panel
     if (!ok) throw new Error('webgl2 init failed');
-    applyQuality(true); $('pv2Loader').classList.add('done'); $('pv2Fake').textContent = ui().fiction;
+    applyQuality(true); $('pv2Fake').textContent = ui().fiction;
+    // No 0–7.4s preamble: enter the error-flood section immediately.
+    // Use the original soundtrack at the corresponding beat so the real film stays in sync.
+    const beginAt = T_ERR0 + .03;
     AU.start(); AU.stopMusic();
     await new Promise(r => AU.checkClock(r));
-    if (AU.useCtx && AU.buf) { AU.startMusicAt(TM); AU.scheduleMusicAutomation(-8); }
+    if (AU.useCtx && AU.buf) { AU.seekMusic(beginAt); AU.scheduleMusicAutomation(uOf(beginAt)); }
+    else { AU.fakeBase = performance.now() - beginAt * 1000; AU.fakeOffset = 0; AU.pausedAt = null; }
+    P2.wallBeginMs = performance.now(); P2.wallBeginAt = beginAt; P2.clockFallback = false;
     armIntroSfx();
     P2.starting = false; P2.ready = true; cancelAnimationFrame(P2.raf); P2.raf = requestAnimationFrame(frame);
   } catch (e) {
-    console.warn('[pv2] launch failed → legacy PV', e); P2.starting = false; P2.failed = true; exit(true); if (fallback) fallback();
+    console.warn('[pv2] launch failed (legacy disabled)', e); P2.starting = false; P2.failed = true; exit(true); alert('新しい文字PVの再生に失敗しました。ブラウザや端末の対応状況を確認してください。');
   }
 }
 function exit(silent) {
@@ -4058,14 +4200,28 @@ function exit(silent) {
   if (!silent) { const b = document.getElementById('pvTeaserLink'); b && b.focus({ preventScroll: true }); }
 }
 function restart() { const fb = P2.fallback; exit(true); setTimeout(() => launch(fb), 60); }
-function preload() { /* warm the heavy, language-independent work on the first click of the teaser (gesture available) */
-  if (!supported() || P2.preloading || AU.buf) return; P2.preloading = true;
-  (async () => { try { await AU.init(); await loadAudio(); await loadAnalysis(); } catch (e) { } P2.preloading = false; })();
+let pv2PreloadJob = null;
+function preload(onProgress) {
+  // Initialize sound on the real teaser click, then update the inline progress
+  // until the actual new WebGL2 glyph atlas has been prepared. No second loader.
+  if (!supported()) return Promise.resolve(false);
+  if(typeof onProgress==='function') {pv2WarmProgressHandler=onProgress;onProgress(pv2WarmProgress)}
+  if (P2.loadedLang === currentLang() && GLR.gl) return warmAssets(onProgress);
+  if (pv2PreloadJob) return pv2PreloadJob;
+  P2.preloading = true;
+  const audioInit = AU.init();
+  pv2PreloadJob = new Promise((resolve,reject) => {
+    requestAnimationFrame(() => setTimeout(() => {
+      Promise.resolve(audioInit).then(() => {
+        if (!P2.built) buildUI();
+        return warmAssets(onProgress);
+      }).then(resolve,reject).finally(() => {P2.preloading=false;pv2PreloadJob=null});
+    }, 0));
+  });
+  return pv2PreloadJob;
 }
 
 window.PV2 = { supported, launch, exit, restart, preload, pause: () => togglePause(true), resume: () => togglePause(false), seekU: u => { if (P2.open && P2.ready) seekTo(T_FILM + u * BP + .001); }, state: P2, FX, WORLD, GLR, AU, ATLAS, SPECTACLE };
-
-try{const tl=document.getElementById('pvTeaserLink');tl&&tl.addEventListener('click',()=>{try{window.PV2.preload()}catch(e){}})}catch(e){}
 
 })();
 </script>
