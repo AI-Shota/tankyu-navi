@@ -1213,7 +1213,86 @@ html[data-site-theme="dark"] #advice .ai-mascot-row .mascot-words::before{
   border-bottom-color:#48606a!important;
 }
 </style>
-</head><body><a class="skip" href="#home"><span data-tr="本文へ">本文へ</span></a><header class="topbar"><div class="wrap top-inner"><div class="brand"><span class="brand-mark"><img alt="" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTciIGZpbGw9IiM2YzliODUiLz48cGF0aCBkPSJNMTQgMThxMTgtNyAzMiA0djMwcS0xNi0xMC0zMi00WiIgZmlsbD0iI2ZmZmFmMCIgc3Ryb2tlPSIjMzI1NDViIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMzEgMjB2MjkiIHN0cm9rZT0iIzhjYmQ5YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTM5IDE3cTEtOSAxMi05LTIgMTEtMTIgOVoiIGZpbGw9IiNkNWVhYTkiLz48L3N2Zz4=" width="40"/></span><span data-tr="探究ナビ">探究ナビ</span></div><div class="locale-picker" title="Language / 言語"><label class="visually-hidden" for="languageSelect" id="languageLabel"><span data-tr="言語">言語</span></label><span aria-hidden="true" class="locale-control"><svg aria-hidden="true" class="translate-symbol" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3H2"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><svg aria-hidden="true" class="translate-caret" fill="none" viewbox="0 0 12 12"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path></svg></span><select aria-label="表示言語を選択" data-tr-aria-label="表示言語" id="languageSelect" title="Language / 言語を選択"><option value="ja">日本語</option><option value="en">English</option><option value="ko">한국어</option><option value="zh-CN">简体中文</option><option title="繁體中文（台灣）" value="zh-TW">繁體中文</option></select></div><div class="theme-control" id="siteThemeControl"><button type="button" class="theme-toggle" id="themeToggle" aria-haspopup="menu" aria-controls="themeMenu" aria-expanded="false" aria-label="表示テーマ: システムに従う" title="表示テーマ"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"></rect><path d="M8 21h8M12 17v4" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></button><div class="theme-menu" id="themeMenu" role="menu" aria-label="表示テーマ" hidden><button type="button" class="theme-option" data-theme-choice="system" role="menuitemradio" aria-checked="true"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg><span class="theme-option-label">システムに従う</span><span class="theme-check" aria-hidden="true">✓</span></button><button type="button" class="theme-option" data-theme-choice="light" role="menuitemradio" aria-checked="false"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2"></path></svg><span class="theme-option-label">ライト</span><span class="theme-check" aria-hidden="true">✓</span></button><button type="button" class="theme-option" data-theme-choice="dark" role="menuitemradio" aria-checked="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.7 13.05A9 9 0 0 1 10.95 3.3 9 9 0 1 0 20.7 13.05Z"></path></svg><span class="theme-option-label">ダーク</span><span class="theme-check" aria-hidden="true">✓</span></button></div></div><div aria-live="polite" class="save" id="status">✓ 自動保存</div><button type="button" id="backupBadge" class="bw-status" aria-haspopup="dialog" title="バックアップについて">⚠ バックアップ</button></div></header><div id="operatorBanner" hidden role="status" aria-live="polite"><div class="operator-banner-body"><strong id="operatorBannerLabel">お知らせ</strong><p id="operatorBannerText"></p></div></div><main class="wrap"><div class="intro"><div><h1 id="pageTitle">今日の探究</h1><p id="pageSub">続きから、さくっと始めよう。</p></div></div><div class="layout"><aside class="sidebar"><nav aria-label="メインメニュー" class="nav" data-tr-aria-label="メインメニュー" id="sidebarNav"></nav><div aria-label="探究の小さなヒント" class="daily-sticky" data-tr-aria-label="探究の小さなヒント">
+<style id="data-management-style">
+/* Compact data hub and low-noise notices; ordinary site only. */
+.data-hub{max-width:790px;margin-inline:auto}
+.data-hub-head{display:flex;align-items:center;gap:13px;margin-bottom:21px}
+.data-hub-emblem{display:grid;place-items:center;flex:none;width:46px;height:46px;border-radius:13px;background:#e6f1ed;color:#35695c;font-size:24px}
+.data-hub-head .title{margin:0 0 5px}
+.data-hub-head .desc{margin:0}
+.data-hub-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.data-hub-action{min-width:0;border:1px solid #dfe6e4;border-radius:14px;padding:20px;background:#fbfcf9;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.data-hub-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#e2eee9;color:#376858;font-size:23px;font-weight:700}
+.data-hub-action h3{font-size:17px;line-height:1.45;margin:3px 0 0;color:#263f46}
+.data-hub-action p{font-size:13px;color:#657982;line-height:1.65;margin:0 0 4px}
+.data-hub-action .btn{margin-top:auto;min-width:170px}
+.data-hub-warning{font-size:12px;color:#7e6d51;background:#fff8e8;border:1px solid #eee1be;border-radius:10px;padding:11px 14px;line-height:1.65;margin:16px 0 0}
+.data-hub-feedback{font-size:13px;color:#2b6d52;background:#e8f3ec;border-radius:10px;padding:12px 14px;margin:14px 0 0}
+.data-hub-feedback[hidden]{display:none}
+.data-hub-footnote{font-size:12px;color:var(--sub);text-align:center;margin:4px auto 24px;line-height:1.65}
+.bw-status{white-space:nowrap;font-size:12px;background:#f1f4f1;color:#506760;border-color:#dce7df}
+.bw-status[data-backed="true"]{background:#edf5f0;color:#376a56;border-color:#d6e7db}
+.bw-footer{display:none!important}
+.bw-overline{letter-spacing:.06em}
+/* First-save notice: quiet, compact, two clear actions. */
+.backup-warning::backdrop{background:rgba(10,19,23,.65)!important;backdrop-filter:blur(3px)}
+.bw-shell{max-width:470px!important;animation:none!important}
+.bw-stripe,.bw-frame::before,.bw-frame::after,.bw-ring{display:none!important}
+.bw-frame{border:1px solid #dce3e3!important;border-radius:17px!important;background:#fffefa!important;box-shadow:0 20px 65px #080f1e40!important;margin:0!important;padding:25px 24px!important;inset:auto!important}
+.bw-topline{color:#63737d!important;font-size:10px!important;letter-spacing:.08em!important}
+.bw-topline::after{background:#dfe6e7!important}
+.bw-language{background:#f5f7f5!important;color:#344b54!important;border-color:#dae4e3!important}
+.bw-symbol,.backup-warning.is-start .bw-symbol{width:44px!important;height:44px!important;margin:12px auto 6px!important;color:#b78345!important;filter:none!important}
+.bw-symbol svg{width:32px!important;height:32px!important;animation:none!important}
+.bw-overline,.backup-warning.is-start .bw-overline{font-size:10px!important;color:#7f878b!important;letter-spacing:.08em!important;margin-bottom:4px!important}
+.bw-title{font-size:21px!important;line-height:1.5!important;margin:0 0 10px!important;color:#2d414b!important}
+.bw-copy{font-size:14px!important;line-height:1.7!important;margin:0 auto 10px!important;color:#52646e!important}
+.bw-note,.backup-warning.is-start .bw-note{font-size:12px!important;font-weight:600!important;line-height:1.6!important;color:#677780!important;margin:0 auto 19px!important;padding:0!important;background:transparent!important;border:0!important}
+.bw-actions{gap:9px!important}
+.bw-btn{min-height:43px!important;font-size:13px!important;border-radius:10px!important;padding:10px 14px!important}
+.bw-btn.main{background:#3c7460!important;color:#fff!important;box-shadow:none!important}
+.bw-btn.secondary{background:#edf1f0!important;color:#41545e!important;border-color:#d8e1e0!important}
+html[data-site-theme="dark"] .bw-frame{background:#223138!important;border-color:#52666c!important}
+html[data-site-theme="dark"] .bw-title{color:#e6efef!important}
+html[data-site-theme="dark"] .bw-copy{color:#bdced2!important}
+html[data-site-theme="dark"] .bw-note{color:#aebfc5!important}
+html[data-site-theme="dark"] .bw-language{background:#2d414a!important;color:#ecf2f2!important;border-color:#566c72!important}
+html[data-site-theme="dark"] .bw-btn.secondary{background:#334a53!important;color:#e6f2f0!important;border-color:#51646a!important}
+@media(max-width:640px){.data-hub-actions{grid-template-columns:1fr}.data-hub-action{padding:18px}.data-hub-action .btn{width:100%}}
+@media(max-width:380px){.top-inner .bw-status::before{content:'▣'!important}}
+html[data-site-theme="dark"] .data-hub-emblem,html[data-site-theme="dark"] .data-hub-icon{background:#2b4b43;color:#c9eadb}
+html[data-site-theme="dark"] .data-hub-action{background:#223239;border-color:#42555c}
+html[data-site-theme="dark"] .data-hub-action h3{color:#e3eff0}
+html[data-site-theme="dark"] .data-hub-action p{color:#b6c9cf}
+html[data-site-theme="dark"] .data-hub-warning{background:#3a3428;border-color:#665840;color:#ead4a5}
+html[data-site-theme="dark"] .data-hub-feedback{background:#263f38;color:#d3f0e1}
+</style>
+<style id="first-visit-guide-style">
+/* First-visit walkthrough is isolated from the cinema/PV styling. */
+.onb-help-button{flex:0 0 40px;width:40px;height:40px;display:inline-grid;place-items:center;padding:0;border:1px solid var(--line,#52616a);border-radius:13px;background:transparent;color:var(--ink,#31424c);cursor:pointer;transition:border-color .15s,background .15s;position:relative}
+.onb-help-button svg{width:22px;height:22px;display:block}
+.onb-help-button:hover,.onb-help-button:focus-visible{border-color:#75a99b;background:rgba(112,161,151,.12)}
+html[data-site-theme="dark"] .onb-help-button{color:#d5e5e9;border-color:#425962}
+#onbBlocker{position:fixed;inset:0;z-index:4999;background:transparent;cursor:default}
+#onbHalo{position:fixed;z-index:5000;border-radius:14px;border:2px solid #98e0cd;box-shadow:0 0 0 200vmax rgba(7,16,23,.73),0 0 0 5px rgba(152,224,205,.14);pointer-events:none;will-change:top,left,width,height}
+#onbPanel{position:fixed;z-index:5001;width:min(340px,calc(100vw - 32px));box-sizing:border-box;padding:18px 19px 16px;background:#fcfdfa;color:#243a42;border:1px solid #d7e5e1;box-shadow:0 16px 45px rgba(0,0,0,.22);border-radius:17px;font-family:'M PLUS Rounded 1c',system-ui,sans-serif}
+#onbPanel .onb-step{color:#527c79;font-size:11px;font-weight:800;letter-spacing:.1em}
+#onbPanel h2{font:800 20px/1.5 'M PLUS Rounded 1c',system-ui,sans-serif;letter-spacing:0;margin:7px 0 5px;color:#243a42}
+#onbPanel p{margin:0;font-size:13px;line-height:1.7;color:#4d666d}
+.onb-actions{display:flex;align-items:center;gap:8px;margin-top:17px}
+#onbNext{border:0;border-radius:10px;padding:10px 16px;min-height:42px;background:#347765;color:#fff;font-weight:800;cursor:pointer;white-space:nowrap}
+#onbBack,#onbSkip{border:0;background:transparent;border-radius:9px;padding:9px;color:#52666c;cursor:pointer;font-weight:700;font-size:12px}
+#onbSkip{margin-right:auto}
+#onbBack[hidden],#onbSkip[hidden]{display:none!important}
+#onbPanel button:focus-visible,.onb-help-button:focus-visible{outline:3px solid #e6b46f;outline-offset:3px}
+#onbHelpHint{position:fixed;z-index:5010;max-width:min(280px,calc(100vw - 24px));background:#fcfdfa;color:#2d4c51;padding:11px 13px;border:1px solid #c4dcd5;border-radius:12px;box-shadow:0 8px 22px #06151e3b;pointer-events:none;font-size:12px;font-weight:800;line-height:1.6}
+.onb-help-button.onb-help-pulse{outline:3px solid #72bda7;outline-offset:3px;animation:onbPulse 1.1s ease-in-out 3}
+@keyframes onbPulse{50%{outline-color:#a5e9d6;outline-offset:6px}}
+@media(max-width:700px){#onbPanel{left:16px!important;right:16px!important;width:auto!important;bottom:calc(15px + env(safe-area-inset-bottom))!important;top:auto!important;padding:15px 16px}#onbPanel h2{font-size:18px}#onbPanel p{font-size:12px}.top-inner .save{display:none!important}}
+@media(max-width:420px){.onb-help-button{flex-basis:34px;width:34px;height:38px;border-radius:10px}.onb-help-button svg{width:20px;height:20px}.top-inner{gap:5px!important}}
+@media(prefers-reduced-motion:reduce){.onb-help-button.onb-help-pulse{animation:none}}
+</style>
+</head><body><a class="skip" href="#home"><span data-tr="本文へ">本文へ</span></a><header class="topbar"><div class="wrap top-inner"><div class="brand"><span class="brand-mark"><img alt="" height="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTciIGZpbGw9IiM2YzliODUiLz48cGF0aCBkPSJNMTQgMThxMTgtNyAzMiA0djMwcS0xNi0xMC0zMi00WiIgZmlsbD0iI2ZmZmFmMCIgc3Ryb2tlPSIjMzI1NDViIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMzEgMjB2MjkiIHN0cm9rZT0iIzhjYmQ5YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTM5IDE3cTEtOSAxMi05LTIgMTEtMTIgOVoiIGZpbGw9IiNkNWVhYTkiLz48L3N2Zz4=" width="40"/></span><span data-tr="探究ナビ">探究ナビ</span></div><div class="locale-picker" title="Language / 言語"><label class="visually-hidden" for="languageSelect" id="languageLabel"><span data-tr="言語">言語</span></label><span aria-hidden="true" class="locale-control"><svg aria-hidden="true" class="translate-symbol" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3H2"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg><svg aria-hidden="true" class="translate-caret" fill="none" viewbox="0 0 12 12"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path></svg></span><select aria-label="表示言語を選択" data-tr-aria-label="表示言語" id="languageSelect" title="Language / 言語を選択"><option value="ja">日本語</option><option value="en">English</option><option value="ko">한국어</option><option value="zh-CN">简体中文</option><option title="繁體中文（台灣）" value="zh-TW">繁體中文</option></select></div><div class="theme-control" id="siteThemeControl"><button type="button" class="theme-toggle" id="themeToggle" aria-haspopup="menu" aria-controls="themeMenu" aria-expanded="false" aria-label="表示テーマ: システムに従う" title="表示テーマ"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"></rect><path d="M8 21h8M12 17v4" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></button><div class="theme-menu" id="themeMenu" role="menu" aria-label="表示テーマ" hidden><button type="button" class="theme-option" data-theme-choice="system" role="menuitemradio" aria-checked="true"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg><span class="theme-option-label">システムに従う</span><span class="theme-check" aria-hidden="true">✓</span></button><button type="button" class="theme-option" data-theme-choice="light" role="menuitemradio" aria-checked="false"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2"></path></svg><span class="theme-option-label">ライト</span><span class="theme-check" aria-hidden="true">✓</span></button><button type="button" class="theme-option" data-theme-choice="dark" role="menuitemradio" aria-checked="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.7 13.05A9 9 0 0 1 10.95 3.3 9 9 0 1 0 20.7 13.05Z"></path></svg><span class="theme-option-label">ダーク</span><span class="theme-check" aria-hidden="true">✓</span></button></div></div><button type="button" id="onbHelp" class="onb-help-button" title="使い方ガイド" aria-label="使い方ガイドを開く" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 9.1a2.6 2.6 0 1 1 4.4 1.9c-1.3 1.1-1.9 1.6-1.9 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1" fill="currentColor"/></svg></button><div aria-live="polite" class="save" id="status">✓ 自動保存</div><button type="button" id="backupBadge" class="bw-status" title="データ管理">▣ データ管理</button></div></header><div id="onbBlocker" hidden aria-hidden="true"></div><div id="onbHalo" hidden aria-hidden="true"></div><section id="onbPanel" hidden role="dialog" aria-modal="true" aria-labelledby="onbTitle" aria-describedby="onbDesc"><div class="onb-step" id="onbStep"></div><h2 id="onbTitle"></h2><p id="onbDesc"></p><div class="onb-actions"><button type="button" id="onbSkip"></button><button type="button" id="onbBack"></button><button type="button" id="onbNext"></button></div></section><div id="onbHelpHint" hidden role="status"></div><div id="operatorBanner" hidden role="status" aria-live="polite"><div class="operator-banner-body"><strong id="operatorBannerLabel">お知らせ</strong><p id="operatorBannerText"></p></div></div><main class="wrap"><div class="intro"><div><h1 id="pageTitle">今日の探究</h1><p id="pageSub">続きから、さくっと始めよう。</p></div></div><div class="layout"><aside class="sidebar"><nav aria-label="メインメニュー" class="nav" data-tr-aria-label="メインメニュー" id="sidebarNav"></nav><div aria-label="探究の小さなヒント" class="daily-sticky" data-tr-aria-label="探究の小さなヒント">
 <div class="daily-sticky-top"><span><span data-tr="今日のふせん">今日のふせん</span></span><span aria-hidden="true" class="mini-paperclip">⌇</span></div>
 <p aria-live="polite" id="dailyTip">ひとつ調べると、ひとつ見えてくる。</p>
 <button aria-label="別のヒントを表示" data-tr-aria-label="別のヒントを表示" id="nextTip" type="button"><span data-tr="↻ もうひとつ">↻ もうひとつ</span></button>
@@ -1231,7 +1310,38 @@ html[data-site-theme="dark"] #advice .ai-mascot-row .mascot-words::before{
 </section>
 </section>
 <section class="panel" id="project"><div class="card"><div class="hand sectionhead" style="margin-top:0"><span data-tr="まずは、テーマから ✍️">まずは、テーマから ✍️</span></div><div class="field"><label for="topic"><span data-tr="何について探究する？">何について探究する？</span></label><input data-tr-placeholder="例：地域の観光をもっと楽しくするには？" id="topic" maxlength="200" placeholder="例：地域の観光をもっと楽しくするには？" type="text"/><div class="hint"><span data-tr="ひとことでOK。あとから変えられます">ひとことでOK。あとから変えられます</span></div></div><div class="field"><label for="purpose"><span data-tr="何を明らかにしたい？">何を明らかにしたい？</span></label><textarea data-tr-placeholder="例：観光客も地域の人も楽しめる方法を考えたい" id="purpose" placeholder="例：観光客も地域の人も楽しめる方法を考えたい"></textarea></div><button class="btn primary" id="saveTopic"><span data-tr="保存して進む →">保存して進む →</span></button></div><details class="work-fold memo-fold" id="backgroundFold"><summary class="work-fold-head"><span data-tr="もう分かっていること・疑問">もう分かっていること・疑問</span><span aria-hidden="true" class="fold-hint">⌄</span></summary><div class="card"><div class="hand sectionhead" style="margin-top:0"><span data-tr="考えをメモしておこう 📝">考えをメモしておこう 📝</span></div><div class="field"><label for="known"><span data-tr="もう分かっていること">もう分かっていること</span></label><textarea data-tr-placeholder="調べて分かったこと、授業で知ったこと" id="known" placeholder="調べて分かったこと、授業で知ったこと"></textarea></div><div class="field"><label for="unknown"><span data-tr="まだ分からないこと">まだ分からないこと</span></label><textarea data-tr-placeholder="次に調べたいこと、気になること" id="unknown" placeholder="次に調べたいこと、気になること"></textarea></div><div class="tiny"><span data-tr="✓ 入力した内容は自動保存されます">✓ 入力した内容は自動保存されます</span></div></div></details><details class="work-fold" id="roadmapFold"><summary class="work-fold-head"><span data-tr="5ステップの進み具合">5ステップの進み具合</span><span aria-hidden="true" class="fold-hint">⌄</span></summary><div class="card"><h2 class="title"><span data-tr="探究のロードマップ 🗺️">探究のロードマップ 🗺️</span></h2><p class="desc"><span data-tr="できたところにチェック。順番を飛ばしてもOK。">できたところにチェック。順番を飛ばしてもOK。</span></p><div class="row"><div class="progress"><div class="fill" id="allProgress"></div></div><strong id="allProgressText">0 / 5 完了</strong></div></div><div id="progressGuideStep" hidden role="note"><span class="guide-icon" aria-hidden="true">✍</span><span class="guide-msg" id="progressGuideMessage">終わったステップは「完了にする」を押してね</span><button id="progressGuideDismiss" type="button">わかった</button></div><div class="steps" id="stepsList"></div></details></section>
-<section class="panel" id="notes"><div class="card"><h2 class="title"><span data-tr="調べたことをメモ 📒">調べたことをメモ 📒</span></h2><p class="desc"><span data-tr="あとで見返せるように、発見を残しておこう">あとで見返せるように、発見を残しておこう</span></p><input id="editId" type="hidden"/><div class="field"><label for="noteTitle"><span data-tr="何を調べた？">何を調べた？</span><span class="mini-badge"><span data-tr="必須">必須</span></span></label><input data-tr-placeholder="例：地域の観光客数" id="noteTitle" placeholder="例：地域の観光客数" type="text"/></div><div class="field"><label for="noteFound"><span data-tr="分かったこと">分かったこと</span></label><textarea data-tr-placeholder="例：昨年より観光客が増えていた" id="noteFound" placeholder="例：昨年より観光客が増えていた"></textarea></div><details class="work-fold note-extras" id="noteExtras"><summary class="work-fold-head"><span data-tr="URL・追加の疑問（任意）">URL・追加の疑問（任意）</span><span aria-hidden="true" class="fold-hint">⌄</span></summary><div class="field"><label for="noteUrl"><span data-tr="参考にしたURL（あれば）">参考にしたURL（あれば）</span></label><input id="noteUrl" placeholder="https://..." type="url"/></div><div class="field"><label for="noteQuestion"><span data-tr="まだ気になること">まだ気になること</span></label><textarea data-tr-placeholder="例：どうして増えたんだろう？" id="noteQuestion" placeholder="例：どうして増えたんだろう？" style="min-height:70px"></textarea></div></details><div class="row"><button class="btn primary" id="saveNote"><span data-tr="＋ ノートを追加">＋ ノートを追加</span></button><button class="btn neutral hidden" id="cancelEdit"><span data-tr="編集をやめる">編集をやめる</span></button></div><p class="tiny draft-status" id="draftStatus">書きかけも自動保存します。</p></div><div class="row between"><div class="sectionhead hand"><span data-tr="これまでのメモ">これまでのメモ</span></div><div class="row"><button class="btn pale" id="exportBtn"><span data-tr="↓ 書き出す">↓ 書き出す</span></button><button class="btn neutral" id="importBtn" type="button"><span data-tr="↑ 読み込む">↑ 読み込む</span></button><input accept=".json,application/json" aria-label="保存データを読み込む" class="sr-only" data-tr-aria-label="保存データを読み込む" id="importFile" type="file"/></div></div><div class="note-find"><label class="sr-only" for="noteSearch"><span data-tr="ノートを検索">ノートを検索</span></label><span aria-hidden="true">⌕</span><input aria-label="ノートを検索" autocomplete="off" data-tr-aria-label="ノートを検索" data-tr-placeholder="過去のメモを検索" id="noteSearch" placeholder="過去のメモを検索" type="search"/><span class="tiny" id="noteSearchCount"></span></div><div id="notesList"></div></section>
+<section class="panel" id="notes"><div class="card"><h2 class="title"><span data-tr="調べたことをメモ 📒">調べたことをメモ 📒</span></h2><p class="desc"><span data-tr="あとで見返せるように、発見を残しておこう">あとで見返せるように、発見を残しておこう</span></p><input id="editId" type="hidden"/><div class="field"><label for="noteTitle"><span data-tr="何を調べた？">何を調べた？</span><span class="mini-badge"><span data-tr="必須">必須</span></span></label><input data-tr-placeholder="例：地域の観光客数" id="noteTitle" placeholder="例：地域の観光客数" type="text"/></div><div class="field"><label for="noteFound"><span data-tr="分かったこと">分かったこと</span></label><textarea data-tr-placeholder="例：昨年より観光客が増えていた" id="noteFound" placeholder="例：昨年より観光客が増えていた"></textarea></div><details class="work-fold note-extras" id="noteExtras"><summary class="work-fold-head"><span data-tr="URL・追加の疑問（任意）">URL・追加の疑問（任意）</span><span aria-hidden="true" class="fold-hint">⌄</span></summary><div class="field"><label for="noteUrl"><span data-tr="参考にしたURL（あれば）">参考にしたURL（あれば）</span></label><input id="noteUrl" placeholder="https://..." type="url"/></div><div class="field"><label for="noteQuestion"><span data-tr="まだ気になること">まだ気になること</span></label><textarea data-tr-placeholder="例：どうして増えたんだろう？" id="noteQuestion" placeholder="例：どうして増えたんだろう？" style="min-height:70px"></textarea></div></details><div class="row"><button class="btn primary" id="saveNote"><span data-tr="＋ ノートを追加">＋ ノートを追加</span></button><button class="btn neutral hidden" id="cancelEdit"><span data-tr="編集をやめる">編集をやめる</span></button></div><p class="tiny draft-status" id="draftStatus">書きかけも自動保存します。</p></div><div class="row between" style="gap:12px">
+ <div class="sectionhead hand"><span data-tr="これまでのメモ">これまでのメモ</span></div>
+ <button class="btn pale" type="button" data-goto="data"><span aria-hidden="true">▣</span> <span data-tr="データ管理へ">データ管理へ</span></button>
+</div>
+<div class="note-find"><label class="sr-only" for="noteSearch"><span data-tr="ノートを検索">ノートを検索</span></label><span aria-hidden="true">⌕</span><input aria-label="ノートを検索" autocomplete="off" data-tr-aria-label="ノートを検索" data-tr-placeholder="過去のメモを検索" id="noteSearch" placeholder="過去のメモを検索" type="search"/><span class="tiny" id="noteSearchCount"></span></div><div id="notesList"></div></section>
+<section class="panel" id="data" aria-label="データ管理" data-tr-aria-label="データ管理">
+ <div class="card data-hub">
+  <div class="data-hub-head">
+   <span class="data-hub-emblem" aria-hidden="true">▣</span>
+   <div><h2 class="title" data-tr="データ管理">データ管理</h2>
+   <p class="desc" data-tr="記録を保存・復元できます。">記録を保存・復元できます。</p></div>
+  </div>
+  <div class="data-hub-actions">
+   <div class="data-hub-action">
+    <span class="data-hub-icon" aria-hidden="true">↓</span>
+    <h3 data-tr="バックアップを保存">バックアップを保存</h3>
+    <p data-tr="記録をファイルに保存します。">記録をファイルに保存します。</p>
+    <button class="btn primary" type="button" id="exportBtn"><span data-tr="↓ ファイルを保存">↓ ファイルを保存</span></button>
+   </div>
+   <div class="data-hub-action">
+    <span class="data-hub-icon" aria-hidden="true">↑</span>
+    <h3 data-tr="バックアップから復元">バックアップから復元</h3>
+    <p data-tr="保存したファイルを読み込みます。">保存したファイルを読み込みます。</p>
+    <button class="btn pale" type="button" id="importBtn"><span data-tr="↑ ファイルを選ぶ">↑ ファイルを選ぶ</span></button>
+    <input accept=".json,application/json" aria-label="保存データを読み込む" class="sr-only" data-tr-aria-label="保存データを読み込む" id="importFile" type="file"/>
+   </div>
+  </div>
+  <p class="data-hub-warning" data-tr="復元すると、現在の記録は置き換わります。">復元すると、現在の記録は置き換わります。</p>
+  <p class="data-hub-feedback" id="dataBackupFeedback" role="status" aria-live="polite" hidden></p>
+ </div>
+ <div class="data-hub-footnote" data-tr="記録はこの端末に自動保存されています。">記録はこの端末に自動保存されています。</div>
+</section>
 <section class="panel" id="check"><div class="card"><h2 class="title"><span data-tr="聞く前に、ちょい確認 🔎">聞く前に、ちょい確認 🔎</span></h2><p class="desc"><span data-tr="インタビューする前に、6つだけチェック！">インタビューする前に、6つだけチェック！</span></p><div aria-live="polite" class="check-progress">0 / 6</div><div id="checkList"></div><div aria-live="polite" class="notice" id="checkMessage">まだチェックしていません。</div><div class="row"><button class="btn neutral" id="resetChecks"><span data-tr="↻ やりなおす">↻ やりなおす</span></button><button class="btn primary" data-goto="letter"><span data-tr="依頼文をつくる →">依頼文をつくる →</span></button></div></div><details class="work-fold" id="letterFold"><summary class="work-fold-head"><span data-tr="依頼文を作る">依頼文を作る</span><span aria-hidden="true" class="fold-hint">⌄</span></summary><div class="card"><h2 class="title"><span data-tr="お願いメールをつくる ✉️">お願いメールをつくる ✉️</span></h2><p class="desc"><span data-tr="穴埋めして、コピー。送る前に自分で読み直そう">穴埋めして、コピー。送る前に自分で読み直そう</span></p><div class="field"><label for="recipient"><span data-tr="送る相手">送る相手</span></label><input data-tr-placeholder="例：○○県庁 ○○課 御中" id="recipient" placeholder="例：○○県庁 ○○課 御中" type="text"/></div><div class="field"><label for="sender"><span data-tr="学校・チーム名">学校・チーム名</span></label><input data-tr-placeholder="例：○○高校 1年 探究班" id="sender" placeholder="例：○○高校 1年 探究班" type="text"/></div><div class="field"><label for="requestWhy"><span data-tr="なぜ聞きたい？">なぜ聞きたい？</span></label><textarea data-tr-placeholder="例：公開資料では分からなかった現場の意見を知りたい" id="requestWhy" placeholder="例：公開資料では分からなかった現場の意見を知りたい"></textarea></div><div class="field"><label for="questions"><span data-tr="質問すること">質問すること</span></label><textarea data-tr-placeholder="例：① 現場で感じている課題は何ですか？" id="questions" placeholder="例：① 現場で感じている課題は何ですか？"></textarea></div><div class="field"><label for="burden"><span data-tr="回答方法・所要時間">回答方法・所要時間</span></label><input data-tr-placeholder="例：メールで3問、10分程度" id="burden" placeholder="例：メールで3問、10分程度" type="text"/></div><button class="btn primary" id="makeLetter"><span data-tr="文章をつくる →">文章をつくる →</span></button><div class="hidden" id="letterResult"><h3 class="hand sectionhead"><span data-tr="こんな感じでどう？">こんな感じでどう？</span></h3><div class="doc" id="letterText"></div><div class="row" style="margin-top:12px"><button class="btn pale" id="copyLetter"><span data-tr="📋 コピー">📋 コピー</span></button></div><p class="hint"><span data-tr="※ 相手が断れることも大切に。学校や先生にも確認してから送りましょう。">※ 相手が断れることも大切に。学校や先生にも確認してから送りましょう。</span></p></div></div></details></section>
 <section class="panel" id="advice">
 <div class="card ai-card">
@@ -1533,6 +1643,7 @@ data.tasks=data.tasks.slice(0,10).filter(t=>t&&typeof t.text==='string').map(t=>
 if(!data.letter||typeof data.letter!=='object')data.letter={};
 if(!data.advice||typeof data.advice!=='object')data.advice={...EMPTY.advice};
 let lang=localStorage.getItem(LANG_KEY)||'ja';if(!['ja','en','ko','zh-CN','zh-TW'].includes(lang))lang='ja';
+Object.assign(translations,{"データ管理":{"en":"Data management","ko":"데이터 관리","zh-CN":"数据管理","zh-TW":"資料管理"},"データ管理へ":{"en":"Manage data","ko":"데이터 관리로","zh-CN":"前往数据管理","zh-TW":"前往資料管理"},"バックアップを保存・復元できます。":{"en":"Save or restore your backup.","ko":"백업을 저장하거나 복원할 수 있어요.","zh-CN":"保存或恢复备份。","zh-TW":"儲存或還原備份。"},"記録を保存・復元できます。":{"en":"Save or restore your work.","ko":"기록을 저장하거나 복원할 수 있어요.","zh-CN":"保存或恢复记录。","zh-TW":"儲存或還原紀錄。"},"バックアップを保存":{"en":"Save a backup","ko":"백업 저장","zh-CN":"保存备份","zh-TW":"儲存備份"},"バックアップから復元":{"en":"Restore a backup","ko":"백업에서 복원","zh-CN":"从备份恢复","zh-TW":"從備份還原"},"記録をファイルに保存します。":{"en":"Download your work as a file.","ko":"기록을 파일로 저장합니다.","zh-CN":"将记录保存为文件。","zh-TW":"將紀錄儲存為檔案。"},"保存したファイルを読み込みます。":{"en":"Open a saved backup file.","ko":"저장한 파일을 불러옵니다.","zh-CN":"读取之前保存的文件。","zh-TW":"讀取之前儲存的檔案。"},"↓ ファイルを保存":{"en":"↓ Download file","ko":"↓ 파일 저장","zh-CN":"↓ 保存文件","zh-TW":"↓ 儲存檔案"},"↑ ファイルを選ぶ":{"en":"↑ Choose file","ko":"↑ 파일 선택","zh-CN":"↑ 选择文件","zh-TW":"↑ 選擇檔案"},"復元すると、現在の記録は置き換わります。":{"en":"Restoring replaces your current work.","ko":"복원하면 현재 기록을 덮어씁니다.","zh-CN":"恢复后会替换当前记录。","zh-TW":"還原後會取代目前紀錄。"},"記録はこの端末に自動保存されています。":{"en":"Your work is saved automatically on this device.","ko":"기록은 이 기기에 자동 저장됩니다.","zh-CN":"记录会自动保存在此设备上。","zh-TW":"紀錄會自動儲存在此裝置上。"},"ファイルの保存を開始しました。復元もこの画面からできます。":{"en":"Backup download started. Restore it here too.","ko":"백업 다운로드를 시작했어요. 복원도 여기에서 할 수 있어요.","zh-CN":"备份下载已开始。也可在这里恢复。","zh-TW":"備份下載已開始。也可在這裡還原。"},"現在の記録を置き換えます。復元しますか？":{"en":"This will replace your current work. Restore?","ko":"현재 기록을 덮어씁니다. 복원할까요?","zh-CN":"这将替换当前记录。确定恢复？","zh-TW":"這將取代目前紀錄。確定還原？"},"記録を復元しました":{"en":"Work restored","ko":"기록을 복원했어요","zh-CN":"记录已恢复","zh-TW":"紀錄已還原"}});
 Object.assign(translations,{'わたしのテーマ':{en:'My research topic',ko:'나의 탐구 주제','zh-CN':'我的探究主题','zh-TW':'我的探究主題'}});
 const T=k=>lang==='ja'?k:(translations[k]?.[lang]||translations[k+'。']?.[lang]||k);
 const safe=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1543,7 +1654,8 @@ const PAGES=[
  ['project','✎','テーマ・進捗','探究を進める','テーマと進み具合を、ここでまとめて確認'],
  ['notes','▤','ノート','調査ノート','気づいたことを残しておこう。'],
  ['check','✓','質問・依頼','質問と依頼の準備','質問を整理して、必要なときだけ依頼しよう'],
- ['advice','✦','アドバイス','探究アドバイス','テーマに合わせてヒントをもらおう。']
+ ['advice','✦','アドバイス','探究アドバイス','テーマに合わせてヒントをもらおう。'],
+ ['data','▣','データ管理','データ管理','バックアップを保存・復元できます。']
 ];
 const STEPS=[
  ['✍️','テーマを決める','何を知りたいかを決めよう。','project',['調べたいことを一文にする','探究の目的を決める']],
@@ -1748,25 +1860,25 @@ const BACKUP_WARN_SEEN='tankyuNaviBackupNoticeSeen_v2';
 const BACKUP_CHANGED='tankyuNaviLastChanged';
 const BACKUP_EXPORTED='tankyuNaviLastExported';
 const BACKUP_COPY={
-  ja:{title:'⚠ 記録が消える可能性があります',copy:'このブラウザには自動保存されています。ただし、端末の変更やサイトデータの削除などで、記録が失われる場合があります。',note:'大切な記録を守るため、必ずバックアップを保存してください',export:'↓ バックアップを保存する',later:'今回は閉じる',footer:'ナビィからのお知らせ • この全画面警告は初回の保存時に表示されます',chip:'⚠ バックアップが必要',done:'✓ バックアップ済み',toast:'バックアップのダウンロードを開始しました'},
-  en:{title:'⚠ Your research could be lost',copy:'Your work is auto-saved in this browser. However, it may be lost if you switch devices or clear your browser’s site data.',note:'Please make sure to download a backup of your research',export:'↓ Save a backup now',later:'Close for now',footer:'A note from Navii • This full-screen warning appears when you first save',chip:'⚠ Backup needed',done:'✓ Backed up',toast:'Backup download started'},
-  ko:{title:'⚠ 탐구 기록이 사라질 수 있어요',copy:'이 브라우저에 자동 저장되지만, 기기를 바꾸거나 사이트 데이터를 지우면 기록이 사라질 수 있어요.',note:'중요한 기록을 지키려면 꼭 백업 파일을 저장해 주세요',export:'↓ 지금 백업 저장하기',later:'지금은 닫기',footer:'나비의 안내 • 처음 저장할 때 전체 화면으로 알려드려요',chip:'⚠ 백업 필요',done:'✓ 백업 완료',toast:'백업 다운로드를 시작했어요'},
-  'zh-CN':{title:'⚠ 探究记录可能丢失',copy:'记录已自动保存在当前浏览器中，但更换设备或清除网站数据时，记录可能丢失。',note:'为保护重要记录，请务必下载备份文件',export:'↓ 立即保存备份',later:'暂时关闭',footer:'纳比提醒 · 首次保存时显示此全屏提示',chip:'⚠ 请备份',done:'✓ 已备份',toast:'已开始下载备份'},
-  'zh-TW':{title:'⚠ 探究紀錄可能遺失',copy:'紀錄已自動儲存在目前的瀏覽器中，但更換裝置或清除網站資料時，紀錄可能會遺失。',note:'為了保護重要紀錄，請務必下載備份檔案',export:'↓ 立即儲存備份',later:'暫時關閉',footer:'納比提醒 · 首次儲存時顯示此全螢幕提示',chip:'⚠ 請備份',done:'✓ 已備份',toast:'已開始下載備份'}
+ "ja":{title:"記録のバックアップ",copy:"記録はこの端末に保存されます。端末を変える前にバックアップしましょう。",note:"復元は「データ管理」から。",export:"↓ バックアップを保存する",later:"今回は閉じる",footer:"",chip:"データ管理",done:"データ管理",toast:"バックアップの保存を開始しました"},
+ "en":{title:"Back up your work",copy:"Your work stays on this device. Save a backup before switching devices.",note:"Restore it from Data management.",export:"↓ Save backup",later:"Close",footer:"",chip:"Data",done:"Data",toast:"Backup download started"},
+ "ko":{title:"기록 백업",copy:"기록은 이 기기에 저장됩니다. 기기를 바꾸기 전에 백업하세요.",note:"복원은 데이터 관리에서 할 수 있어요.",export:"↓ 백업 저장",later:"닫기",footer:"",chip:"데이터 관리",done:"데이터 관리",toast:"백업 다운로드를 시작했어요"},
+ "zh-CN":{title:"备份记录",copy:"记录保存在此设备上。更换设备前请备份。",note:"在数据管理中恢复。",export:"↓ 保存备份",later:"关闭",footer:"",chip:"数据管理",done:"数据管理",toast:"已开始下载备份"},
+ "zh-TW":{title:"備份紀錄",copy:"紀錄儲存在此裝置上。更換裝置前請備份。",note:"在資料管理中還原。",export:"↓ 儲存備份",later:"關閉",footer:"",chip:"資料管理",done:"資料管理",toast:"已開始下載備份"},
 };
 const START_COPY={
-  ja:{overline:'はじめての記録 / 大切なお知らせ',title:'⚠ 記録が消える可能性があります',copy:'入力内容はこの端末に自動保存されます。でも、サイト更新時の不具合や端末変更・ブラウザデータの削除などで消える場合があります。',note:'必ず下の「バックアップを保存」を押して、記録をファイルに残してください',begin:'あとで続ける →',backup:'↓ バックアップを保存する',footer:'ナビィからのお知らせ • 最初のテーマ・ノート保存後に一度だけ表示します。右上の「バックアップ」からも確認できます'},
-  en:{overline:'ONE STEP DONE / IMPORTANT',title:'⚠ Your research could be lost',copy:'Your work is saved on this device, but it may be lost after an update issue, a device change, or clearing browser data.',note:'Press “Save a backup” below to keep a copy of your work',begin:'Continue for now →',backup:'↓ Save a backup',footer:'A note from Navii • Shown once after your first topic or note save. See Backup at the top anytime'},
-  ko:{overline:'첫 단계 완료 / 중요 안내',title:'⚠ 탐구 기록이 사라질 수 있어요',copy:'기록은 이 기기에 자동 저장되지만 사이트 업데이트 오류, 기기 변경, 브라우저 데이터 삭제 등으로 사라질 수 있어요.',note:'아래의 ‘백업 저장’ 버튼을 눌러 꼭 파일로 보관해 주세요',begin:'나중에 계속하기 →',backup:'↓ 백업 파일 저장',footer:'나비의 안내 • 첫 주제나 노트를 저장한 뒤 한 번만 표시돼요. 위쪽 백업 버튼에서 다시 확인할 수 있어요'},
-  'zh-CN':{overline:'完成第一步 / 重要提示',title:'⚠ 探究记录可能丢失',copy:'内容会自动保存在本设备上，但网站更新异常、更换设备或清除浏览器数据后，记录仍可能丢失。',note:'请点击下方“保存备份”，务必将记录保存在文件中',begin:'稍后再继续 →',backup:'↓ 保存备份',footer:'纳比提醒 · 首次保存主题或笔记后显示一次，也可点击顶部的备份按钮查看'},
-  'zh-TW':{overline:'完成第一步 / 重要提醒',title:'⚠ 探究紀錄可能遺失',copy:'內容會自動儲存在此裝置上，但網站更新異常、更換裝置或清除瀏覽器資料後，紀錄仍可能遺失。',note:'請按下方「儲存備份」，務必將紀錄留存在檔案中',begin:'稍後再繼續 →',backup:'↓ 儲存備份',footer:'納比提醒 · 首次儲存主題或筆記後顯示一次，也可點選上方的備份按鈕查看'}
+ "ja":{overline:"記録の保管 / BACKUP",title:"記録のバックアップ",copy:"記録はこの端末に保存されます。端末を変える前にバックアップしましょう。",note:"復元は「データ管理」から。",begin:"あとで続ける",backup:"↓ バックアップを保存する",footer:""},
+ "en":{overline:"BACKUP",title:"Back up your work",copy:"Your work stays on this device. Save a backup before switching devices.",note:"Restore it from Data management.",begin:"Continue",backup:"↓ Save backup",footer:""},
+ "ko":{overline:"백업",title:"기록 백업",copy:"기록은 이 기기에 저장됩니다. 기기를 바꾸기 전에 백업하세요.",note:"복원은 데이터 관리에서 할 수 있어요.",begin:"계속하기",backup:"↓ 백업 저장",footer:""},
+ "zh-CN":{overline:"备份",title:"备份记录",copy:"记录保存在此设备上。更换设备前请备份。",note:"在数据管理中恢复。",begin:"继续",backup:"↓ 保存备份",footer:""},
+ "zh-TW":{overline:"備份",title:"備份紀錄",copy:"紀錄儲存在此裝置上。更換裝置前請備份。",note:"在資料管理中還原。",begin:"繼續",backup:"↓ 儲存備份",footer:""},
 };
 function backupCopy(){return BACKUP_COPY[lang]||BACKUP_COPY.ja}
 function hasResearchData(){return Boolean(data.project.topic.trim()||data.project.purpose.trim()||data.project.known.trim()||data.project.unknown.trim()||data.notes.length||data.tasks.length||data.done.some(Boolean))}
 function syncWarningDialog(){
  const intro=backupWarningMode==='start', c=intro?(START_COPY[lang]||START_COPY.ja):backupCopy(), hasWork=hasResearchData();
  $('backupWarning').classList.toggle('is-start',intro);
- $('bwOverline').textContent=intro?c.overline:'DATA LOSS WARNING // BACKUP REQUIRED';
+ $('bwOverline').textContent=intro?c.overline:'BACKUP';
  $('bwTitle').textContent=c.title;$('bwCopy').textContent=c.copy;$('bwNote').textContent=c.note;$('bwFooter').textContent=c.footer;
  $('bwExport').textContent=intro?c.backup:c.export;
  $('bwLater').textContent=intro?c.begin:c.later;
@@ -1777,7 +1889,7 @@ function syncWarningDialog(){
 function backupGet(k){try{return localStorage.getItem(k)}catch{return null}}
 function backupSet(k,v){try{localStorage.setItem(k,String(v))}catch{}}
 function backupReady(){const backup=Number(backupGet(BACKUP_EXPORTED)||0),changed=Number(backupGet(BACKUP_CHANGED)||0);return backup>0&&backup>=changed}
-function syncBackupNotice(){const c=backupCopy(),badge=$('backupBadge');if(!badge)return;badge.dataset.backed=String(backupReady());badge.textContent=backupReady()?c.done:c.chip;badge.title=c.note;const el=$('backupWarning');if(!el)return;syncWarningDialog()}
+function syncBackupNotice(){const c=backupCopy(),badge=$('backupBadge');if(!badge)return;badge.dataset.backed=String(backupReady());badge.textContent='▣ '+c.chip;badge.title=T('データ管理');badge.setAttribute('aria-label',T('データ管理'));const el=$('backupWarning');if(!el)return;syncWarningDialog()}
 function openBackupWarning(mode='saved'){backupWarningMode=mode;syncBackupNotice();const el=$('backupWarning');if(!el.open)el.showModal()}
 function firstSaveBackupWarning(){
  if(backupGet(BACKUP_WARN_SEEN)==='yes'||backupGet(BACKUP_INTRO_SEEN)==='yes')return;
@@ -1787,12 +1899,12 @@ function firstSaveBackupWarning(){
 function markBackupChanged(){backupSet(BACKUP_CHANGED,Date.now());syncBackupNotice()}
 $('backupWarning').addEventListener('close',()=>{if(backupWarningMode==='start')backupSet(BACKUP_INTRO_SEEN,'yes');});
 $('bwLater').addEventListener('click',()=>{$('backupWarning').close()});
-$('bwExport').addEventListener('click',()=>{exportData();$('backupWarning').close();toast(backupCopy().toast)});
-$('backupBadge').addEventListener('click',()=>openBackupWarning('saved'));
+$('bwExport').addEventListener('click',()=>{exportData();$('backupWarning').close();setPage('data')});
+$('backupBadge').addEventListener('click',()=>setPage('data'));
 $('bwLocale').addEventListener('change',e=>{lang=e.target.value;try{localStorage.setItem(LANG_KEY,lang)}catch{}syncLang()});
 
-function exportData(){const b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='tankyu-navi-backup.json';a.click();backupSet(BACKUP_EXPORTED,Date.now());syncBackupNotice();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
-async function importData(file){if(!file)return;if(file.size>1000000){toast(T('1MB以下のファイルを選んでください'));return}try{const item=JSON.parse(await file.text());if(!item||typeof item!=='object'||!item.project||typeof item.project!=='object'||!Array.isArray(item.done)||!Array.isArray(item.notes))throw Error('format');if(!confirm(T('保存データを置き換えますか？')))return;const sanitize=(v,n=2500)=>typeof v==='string'?v.slice(0,n):'';data.project=Object.fromEntries(['topic','purpose','known','unknown'].map(k=>[k,sanitize(item.project[k])]));data.done=Array.from({length:5},(_,i)=>item.done[i]===true);data.checks=Array.from({length:6},(_,i)=>item.checks?.[i]===true);data.notes=item.notes.slice(0,200).map((n,i)=>({id:String(n.id??i),title:sanitize(n.title,150),found:sanitize(n.found||n.findings),question:sanitize(n.question||n.questions),date:sanitize(n.date,50),url:/^https?:\/\//.test(String(n.url||''))?sanitize(n.url,1000):''})).filter(n=>n.title);data.tasks=Array.isArray(item.tasks)?item.tasks.slice(0,10).map((t,i)=>({id:String(t.id||i),text:sanitize(t.text,110),done:t.done===true})).filter(t=>t.text):[];data.advice={...EMPTY.advice};data.letter={};['recipient','sender','requestWhy','questions','burden'].forEach(id=>$(id).value='');['topic','purpose','known','unknown'].forEach(id=>$(id).value=data.project[id]);setNoteForm();save();syncLang();setPage('home');toast(T('データを読み込みました'))}catch{toast(T('データを読み込めませんでした'))}}
+function exportData(){const b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='tankyu-navi-backup.json';a.click();backupSet(BACKUP_EXPORTED,Date.now());syncBackupNotice();const note=$('dataBackupFeedback');if(note){note.hidden=false;note.textContent=T('ファイルの保存を開始しました。復元もこの画面からできます。')}setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+async function importData(file){if(!file)return;if(file.size>1000000){toast(T('1MB以下のファイルを選んでください'));return}try{const item=JSON.parse(await file.text());if(!item||typeof item!=='object'||!item.project||typeof item.project!=='object'||!Array.isArray(item.done)||!Array.isArray(item.notes))throw Error('format');if(!confirm(T('現在の記録を置き換えます。復元しますか？')))return;const sanitize=(v,n=2500)=>typeof v==='string'?v.slice(0,n):'';data.project=Object.fromEntries(['topic','purpose','known','unknown'].map(k=>[k,sanitize(item.project[k])]));data.done=Array.from({length:5},(_,i)=>item.done[i]===true);data.checks=Array.from({length:6},(_,i)=>item.checks?.[i]===true);data.notes=item.notes.slice(0,200).map((n,i)=>({id:String(n.id??i),title:sanitize(n.title,150),found:sanitize(n.found||n.findings),question:sanitize(n.question||n.questions),date:sanitize(n.date,50),url:/^https?:\/\//.test(String(n.url||''))?sanitize(n.url,1000):''})).filter(n=>n.title);data.tasks=Array.isArray(item.tasks)?item.tasks.slice(0,10).map((t,i)=>({id:String(t.id||i),text:sanitize(t.text,110),done:t.done===true})).filter(t=>t.text):[];data.advice={text:sanitize(item.advice?.text,16000),savedAt:sanitize(item.advice?.savedAt,80),signature:sanitize(item.advice?.signature,1000)};data.letter=Object.fromEntries(['recipient','sender','requestWhy','questions','burden'].map(k=>[k,sanitize(item.letter?.[k],4000)]));['recipient','sender','requestWhy','questions','burden'].forEach(id=>$(id).value=data.letter[id]);['topic','purpose','known','unknown'].forEach(id=>$(id).value=data.project[id]);setNoteForm();save();syncLang();setPage('home');toast(T('記録を復元しました'))}catch{toast(T('データを読み込めませんでした'))}}
 // UI handlers
 $('languageSelect').addEventListener('change',e=>{lang=e.target.value;localStorage.setItem(LANG_KEY,lang);syncLang()});
 
@@ -4480,6 +4592,130 @@ window.PV2 = { supported, launch, exit, restart, preload, pause: () => togglePau
   else if(mq.addListener)mq.addListener(()=>{if(choice==='system')render()});
   new MutationObserver(records=>{if(records.some(r=>r.attributeName==='data-locale'))render()}).observe(root,{attributes:true,attributeFilter:['data-locale']});
   render();
+})();
+</script>
+<script id="first-visit-guide-script">
+(()=>{
+ 'use strict';
+ const KEY='tankyuNaviWelcomeTour_v1';
+ const $=id=>document.getElementById(id);
+ const help=$('onbHelp'),panel=$('onbPanel'),halo=$('onbHalo'),blocker=$('onbBlocker');
+ const next=$('onbNext'),back=$('onbBack'),skip=$('onbSkip'),hint=$('onbHelpHint');
+ if(!help||!panel)return;
+ const steps=[
+  {page:'project',selector:'#topic',title:'テーマを設定',description:'調べたいテーマをここに入力します。'},
+  {page:'notes',selector:'#noteTitle',title:'調べたことを記録',description:'発見したことをノートに残せます。'},
+  {page:'check',selector:'#check .title',title:'質問する前にチェック',description:'連絡する前に質問を整理できます。'},
+  {page:'advice',selector:'#advice .mascot-words .title',title:'ナビィに相談',description:'探究の次の一歩を考えられます。'},
+  {page:'data',selector:'#data .data-hub-action:nth-child(1)',title:'バックアップを保存',description:'ここから記録をファイルに書き出せます。'},
+  {page:'data',selector:'#data .data-hub-action:nth-child(2)',title:'バックアップから復元',description:'保存したファイルをここから読み込めます。'}
+ ];
+ const copy={
+  ja:{titles:steps.map(x=>x.title),descs:steps.map(x=>x.description),step:'使い方',next:'次へ',back:'戻る',skip:'スキップ',finish:'終了',hint:'使い方は「？」からいつでも見られます。',help:'使い方ガイドを開く'},
+  en:{titles:['Set your topic','Take research notes','Check before asking','Ask Navii','Save a backup','Restore a backup'],descs:['Enter your research topic here.','Keep what you discover here.','Organize questions before reaching out.','Get ideas for your next step.','Export your work to a file here.','Import a saved backup here.'],step:'Guide',next:'Next',back:'Back',skip:'Skip',finish:'Finish',hint:'You can reopen this guide with “?”.',help:'Open the guide'},
+  ko:{titles:['탐구 주제 설정','조사 내용 기록','질문 전 확인','나비에게 질문','백업 저장','백업 복원'],descs:['탐구할 주제를 입력하세요.','찾아낸 내용을 노트에 남기세요.','문의하기 전에 질문을 정리하세요.','다음 단계를 함께 생각해요.','여기서 파일로 저장할 수 있어요.','저장한 파일을 여기서 불러오세요.'],step:'사용 안내',next:'다음',back:'이전',skip:'건너뛰기',finish:'종료',hint:'언제든지 “?”에서 안내를 다시 볼 수 있어요.',help:'사용 안내 열기'},
+  'zh-CN':{titles:['设置主题','记录调查笔记','提问前检查','向纳比咨询','导出备份','导入备份'],descs:['在这里输入探究主题。','在这里记下调查发现。','联系他人前先整理问题。','获取下一步的建议。','在这里将记录保存为文件。','在这里导入保存的备份。'],step:'使用指南',next:'下一步',back:'上一步',skip:'跳过',finish:'结束',hint:'随时点击“?”重看指南。',help:'打开使用指南'},
+  'zh-TW':{titles:['設定主題','記錄調查筆記','提問前確認','向納比諮詢','匯出備份','匯入備份'],descs:['在這裡輸入探究主題。','在這裡記下調查發現。','聯絡他人前先整理問題。','取得下一步的建議。','在這裡將紀錄儲存為檔案。','在這裡匯入已儲存的備份。'],step:'使用指南',next:'下一步',back:'上一步',skip:'略過',finish:'結束',hint:'隨時點擊「？」重看指南。',help:'開啟使用指南'}
+ };
+ let active=false,index=-1,refocus=null,hintTimeout=0,delayId=0;
+ const strings=()=>copy[document.documentElement.dataset.locale]||copy.ja;
+ function stored(){try{return localStorage.getItem(KEY)==='yes'}catch{return false}}
+ function markSeen(){try{localStorage.setItem(KEY,'yes')}catch{}}
+ function hideHint(){clearTimeout(hintTimeout);hint.hidden=true;help.classList.remove('onb-help-pulse')}
+ function showHelpHint(){
+   hideHint();const c=strings();
+   help.setAttribute('aria-label',c.help);help.title=c.help;
+   const r=help.getBoundingClientRect();
+   hint.textContent=c.hint;hint.hidden=false;
+   hint.style.top=Math.min(window.innerHeight-95,r.bottom+12)+'px';
+   hint.style.left=Math.max(12,Math.min(r.right-260,window.innerWidth-290))+'px';
+   help.classList.add('onb-help-pulse');
+   hintTimeout=setTimeout(hideHint,5000);
+ }
+ function layout(){
+   if(!active)return;
+   const cfg=steps[index],el=document.querySelector(cfg.selector);
+   if(!el)return;
+   const r=el.getBoundingClientRect(),pad=8;
+   const left=Math.max(8,r.left-pad),top=Math.max(8,r.top-pad);
+   const width=Math.min(innerWidth-left-8,r.width+pad*2),height=Math.min(innerHeight-top-8,r.height+pad*2);
+   Object.assign(halo.style,{left:left+'px',top:top+'px',width:Math.max(12,width)+'px',height:Math.max(12,height)+'px'});
+   if(innerWidth>700){
+     panel.style.bottom='auto';panel.style.right='auto';
+     const w=340,panelHeight=panel.offsetHeight||168;
+     let x=r.right+23,y=r.top;
+     if(x+w>innerWidth-16){x=r.left-w-24}
+     if(x<16){x=Math.max(16,Math.min(innerWidth-w-16,r.left));y=r.bottom+19}
+     if(y+panelHeight>innerHeight-16){y=r.top-panelHeight-20}
+     if(y<16){y=Math.max(16,innerHeight-panelHeight-16)}
+     Object.assign(panel.style,{left:x+'px',top:y+'px'});
+   }
+ }
+ function navigate(page){
+   if(typeof setPage==='function')setPage(page,false);
+   else document.querySelector('[data-nav=\"'+page+'\"]')?.click();
+ }
+ function render(){
+   if(!active)return;
+   const cfg=steps[index],c=strings();
+   navigate(cfg.page);
+   $('onbStep').textContent=c.step+'  '+(index+1)+' / '+steps.length;
+   $('onbTitle').textContent=c.titles[index];
+   $('onbDesc').textContent=c.descs[index];
+   back.textContent=c.back;back.hidden=index===0;
+   skip.textContent=c.skip;skip.hidden=index===steps.length-1;
+   next.textContent=index===steps.length-1?c.finish:c.next;
+   const target=document.querySelector(cfg.selector);
+   if(target){
+     // Keep the highlighted element within the usable part of a small screen.
+     const r=target.getBoundingClientRect(),desiredTop=innerWidth<701?104:140;
+     if(r.top<90||r.bottom>innerHeight-(innerWidth<701?200:35)){
+       window.scrollTo({top:Math.max(0,window.scrollY+r.top-desiredTop),behavior:'instant'});
+     }
+   }
+   requestAnimationFrame(()=>requestAnimationFrame(layout));
+   next.focus({preventScroll:true});
+ }
+ function start(){
+   hideHint();if(active){index=0;render();return}
+   const warning=$('backupWarning');if(warning?.open)warning.close();
+   refocus=document.activeElement;
+   active=true;index=0;
+   blocker.hidden=false;halo.hidden=false;panel.hidden=false;
+   render();
+ }
+ function finish(){
+   if(!active)return;
+   active=false;index=-1;
+   panel.hidden=true;halo.hidden=true;blocker.hidden=true;
+   markSeen();
+   navigate('home');
+   window.scrollTo({top:0,behavior:'instant'});
+   help.focus({preventScroll:true});
+   requestAnimationFrame(showHelpHint);
+ }
+ help.addEventListener('click',()=>{if(!active)start()});
+ next.addEventListener('click',()=>{if(index===steps.length-1)finish();else{index++;render()}});
+ back.addEventListener('click',()=>{if(index>0){index--;render()}});
+ skip.addEventListener('click',()=>{index=steps.length-2;render()});
+ blocker.addEventListener('click',e=>{e.preventDefault()});
+ document.addEventListener('keydown',e=>{
+   if(!active)return;
+   if(e.key==='Escape'){e.preventDefault();finish();return}
+   if(e.key==='Tab'){
+     const allowed=[skip,back,next].filter(el=>!el.hidden);
+     if(!allowed.includes(document.activeElement)){e.preventDefault();next.focus();return}
+     let i=allowed.indexOf(document.activeElement);
+     if(e.shiftKey&&i===0){e.preventDefault();allowed[allowed.length-1].focus()}
+     else if(!e.shiftKey&&i===allowed.length-1){e.preventDefault();allowed[0].focus()}
+   }
+ },true);
+ addEventListener('resize',()=>{if(active)requestAnimationFrame(layout);else if(!hint.hidden)showHelpHint()});
+ addEventListener('scroll',()=>{if(active)requestAnimationFrame(layout)},{passive:true});
+ const startIfFirst=()=>{if(!stored()&&!active)start()};
+ // Wait until the site's normal initialization has finished.
+ if(document.readyState==='complete')delayId=setTimeout(startIfFirst,650);
+ else addEventListener('load',()=>{delayId=setTimeout(startIfFirst,650)},{once:true});
 })();
 </script>
 </body></html>
